@@ -34,7 +34,12 @@ NOT_SME = 0 # Meaning this LF(labeling function) believes the article is not abo
 def lf_explicit_sme(x):
     text = (x.get("clean_geo") or "").lower()
     return SME if re.search(
-        r"\b(mkb|midden- en kleinbedrijf|kmo|kleine onderneming|kleine bedrijven|small and medium enterprise)\b", 
+        r"\b("
+        r"mkb|midden- en kleinbedrijf|kmo|kleine onderneming|kleine bedrijven|"
+        r"small and medium enterprise|"
+        r"mkb-ondernemers?|mkb-bedrijven?|mkb-sector|mkb'er(s)?|"
+        r"ondernemersvereniging|ondernemersloket"
+        r")\b",
         text
     ) else ABSTAIN
 
@@ -43,7 +48,13 @@ def lf_explicit_sme(x):
 def lf_generic_bedrijf(x):
     text = (x.get("clean_geo") or "").lower()
     return SME if re.search(
-        r"\b((klein|mkb|start-?up|onderneming)s? bedrijf)\b", text
+        r"\b("
+        r"(klein(e|er)e?\s+)?bedrijf(fen)?|onderneming(en)?|zaak|zaken|"
+        r"ondernemingshuis|ondernemersloket|bedrijfsleven|"
+        r"organisatie(s)?\s+(in\s+de\s+)?(regio|provincie|gemeente)|"
+        r"bedrijfstak|bedrijfssector"
+        r")\b",
+        text
     ) else ABSTAIN
 
 # General sector terms → horeca, winkel, bouwbedrijf, transport, etc. (from CBS)
@@ -74,8 +85,10 @@ def lf_general_sector_terms(x):
         # Hospitality
         r"horeca|restaurant|café|bar|hotel|snackbar|catering|hospitality"
         r"|"
-        # Info & Communication
+        # Info & Communication + Cybersecurity extensions
         r"informatie en communicatie|ict|it|softwarebedrijf|software company|telecom|mediabedrijf|uitgeverij|communicatiebureau"
+        r"|cyberbedrijf|cybersecurity|cyberweerbaarheid|digitale weerbaarheid|digitale veiligheid|informatiebeveiliging|"
+        r"beveiligingsbedrijf|veilig ondernemen|cybercrime|phishing|ransomware"
         r"|"
         # Financial
         r"financiële dienstverlening|boekhoud(kantoor)?|accountantskantoor|administratiekantoor|verzekeringskantoor"
@@ -124,6 +137,20 @@ def lf_politics_domestic(x):
         text
     ) else ABSTAIN
 
+# Government or personnel appointment news → not relevant for SMEs
+@labeling_function()
+def lf_government_only(x):
+    text = (x.get("clean_geo") or "").lower()
+    return NOT_SME if re.search(
+        r"\b("
+        r"ministerie|departement|justitie|veiligheid|algemene\s+bestuursdienst|"
+        r"directeur|directie|benoemd|benoeming|aanstelling|"
+        r"functie|carrière|vacature|nieuwe\s+positie|chief|officer|"
+        r"bestuurder|leidinggevende|manager|plaatsvervangend"
+        r")\b",
+        text
+    ) else ABSTAIN
+
 @labeling_function()
 def lf_accidents_crime(x):
     text = (x.get("clean_geo") or "").lower()
@@ -131,6 +158,14 @@ def lf_accidents_crime(x):
         r"\b(ongeluk|drama|ramp|brand|dood|moord|criminaliteit|aanrijding|botsing|explosie|verkrachting|rellen)\b", 
         text
     ) else ABSTAIN
+
+@labeling_function()
+def lf_sme_cybercrime(x):
+    text = (x.get("clean_geo") or "").lower()
+    if re.search(r"\b(mkb|bedrijf|ondernemer|zaak|organisatie)\b", text) and \
+       re.search(r"\b(cyber|digitale|phishing|ransomware|weerbaarheid|veiligheid|cybercrime|hack)\b", text):
+        return SME
+    return ABSTAIN
 
 @labeling_function()
 def lf_sports_entertainment(x):
@@ -158,7 +193,9 @@ def run_snorkel(df, lfs=None, min_conf=0.6):
     lf_international_politics,
     lf_accidents_crime,
     lf_politics_domestic,
-    lf_sports_entertainment
+    lf_sme_cybercrime,
+    lf_sports_entertainment,
+    lf_government_only
 ]
 
     # 1) Apply LFs:
