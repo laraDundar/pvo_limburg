@@ -9,11 +9,11 @@ from geo_filter import build_geo_df
 from sme_filter import run_snorkel
 
 
-with open("ncsc.json", "r", encoding="utf-8") as f:
+with open("scrapedArticles/ncsc.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # We filter out the articles that are not from the region before pre-processing.
-df = build_geo_df("ncsc.json", min_conf=0.6)
+df = build_geo_df("scrapedArticles/ncsc.json", min_conf=0.6)
 
 # We filter out the articles that are not about SMEs before pre-processing.
 df, label_model = run_snorkel(df, min_conf=0.5)
