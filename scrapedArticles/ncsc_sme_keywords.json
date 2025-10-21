@@ -474,43 +474,43 @@
     "keywords":[
       {
         "word":"ransomware",
-        "score":0.5451710644
+        "score":0.5552623841
       },
       {
         "word":"incidenten",
-        "score":0.1908098725
+        "score":0.1943418344
       },
       {
         "word":"aangifte",
-        "score":0.1635513193
+        "score":0.1665787152
       },
       {
         "word":"cbw",
-        "score":0.1635513193
-      },
-      {
-        "word":"ingevoerd",
-        "score":0.1635513193
-      },
-      {
-        "word":"zorgplicht",
-        "score":0.1635513193
-      },
-      {
-        "word":"politie",
-        "score":0.1635513193
+        "score":0.1665787152
       },
       {
         "word":"criminelen",
-        "score":0.1635513193
+        "score":0.1665787152
       },
       {
-        "word":"cybercriminelen",
-        "score":0.1090342129
+        "word":"ingevoerd",
+        "score":0.1665787152
+      },
+      {
+        "word":"zorgplicht",
+        "score":0.1665787152
+      },
+      {
+        "word":"politie",
+        "score":0.1665787152
+      },
+      {
+        "word":"voorkomen",
+        "score":0.1110524768
       },
       {
         "word":"voren",
-        "score":0.1090342129
+        "score":0.1110524768
       }
     ]
   },
@@ -1041,43 +1041,43 @@
     "keywords":[
       {
         "word":"eefje",
-        "score":0.3785383728
-      },
-      {
-        "word":"ik",
-        "score":0.270384552
-      },
-      {
-        "word":"zents",
-        "score":0.1622307312
-      },
-      {
-        "word":"officer",
-        "score":0.1622307312
-      },
-      {
-        "word":"ministerie",
-        "score":0.1622307312
-      },
-      {
-        "word":"opgave",
-        "score":0.1622307312
-      },
-      {
-        "word":"positie",
-        "score":0.1622307312
+        "score":0.4003918139
       },
       {
         "word":"relations",
-        "score":0.1622307312
+        "score":0.1715964917
+      },
+      {
+        "word":"zents",
+        "score":0.1715964917
+      },
+      {
+        "word":"positie",
+        "score":0.1715964917
       },
       {
         "word":"chief",
-        "score":0.1622307312
+        "score":0.1715964917
       },
       {
-        "word":"bestuursdienst",
-        "score":0.1081538208
+        "word":"opgave",
+        "score":0.1715964917
+      },
+      {
+        "word":"ministerie",
+        "score":0.1715964917
+      },
+      {
+        "word":"officer",
+        "score":0.1715964917
+      },
+      {
+        "word":"algemene",
+        "score":0.1143976611
+      },
+      {
+        "word":"cro",
+        "score":0.1143976611
       }
     ]
   },
@@ -1701,43 +1701,43 @@
     "keywords":[
       {
         "word":"set",
-        "score":0.3136211041
+        "score":0.3236049909
       },
       {
         "word":"basisprincipe",
-        "score":0.2613509201
+        "score":0.2696708258
       },
       {
         "word":"richtlijnen",
-        "score":0.2090807361
-      },
-      {
-        "word":"bedrijven",
-        "score":0.1568105521
-      },
-      {
-        "word":"ze",
-        "score":0.1568105521
+        "score":0.2157366606
       },
       {
         "word":"gedrag",
-        "score":0.1568105521
+        "score":0.1618024955
       },
       {
         "word":"dreigingen",
-        "score":0.1568105521
-      },
-      {
-        "word":"bevorder",
-        "score":0.1568105521
+        "score":0.1618024955
       },
       {
         "word":"gezamenlijke",
-        "score":0.1568105521
+        "score":0.1618024955
+      },
+      {
+        "word":"bedrijven",
+        "score":0.1618024955
+      },
+      {
+        "word":"bevorder",
+        "score":0.1618024955
       },
       {
         "word":"toepasbaar",
-        "score":0.1568105521
+        "score":0.1618024955
+      },
+      {
+        "word":"vernieuwde",
+        "score":0.1618024955
       }
     ]
   },
@@ -3632,43 +3632,43 @@
     "keywords":[
       {
         "word":"netscaler",
-        "score":0.3906970717
+        "score":0.3960032277
       },
       {
         "word":"citrix",
-        "score":0.3594413059
+        "score":0.3643229695
       },
       {
         "word":"onderzoek",
-        "score":0.2813018916
+        "score":0.2851223239
       },
       {
         "word":"adc",
-        "score":0.234418243
-      },
-      {
-        "word":"kwetsbaarheid",
-        "score":0.2187903601
+        "score":0.2376019366
       },
       {
         "word":"misbruik",
-        "score":0.2187903601
+        "score":0.2217618075
+      },
+      {
+        "word":"kwetsbaarheid",
+        "score":0.2217618075
       },
       {
         "word":"cve",
-        "score":0.2031624773
+        "score":0.2059216784
       },
       {
         "word":"gateway",
-        "score":0.1562788287
+        "score":0.1584012911
       },
       {
         "word":"13",
-        "score":0.1562788287
+        "score":0.1584012911
       },
       {
         "word":"ncsc",
-        "score":0.1264800698
+        "score":0.1281978277
       }
     ]
   }

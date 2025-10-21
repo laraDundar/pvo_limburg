@@ -781,44 +781,44 @@
     ],
     "keywords":[
       {
-        "word":"ik",
-        "score":0.4732084885
-      },
-      {
         "word":"google",
-        "score":0.3897011081
+        "score":0.4823826123
       },
       {
         "word":"neprecensies",
-        "score":0.2783579344
-      },
-      {
-        "word":"je",
-        "score":0.1948505541
-      },
-      {
-        "word":"ze",
-        "score":0.1901708368
+        "score":0.3445590088
       },
       {
         "word":"reviews",
-        "score":0.1670147606
+        "score":0.2067354053
       },
       {
         "word":"oplichters",
-        "score":0.1391789672
-      },
-      {
-        "word":"sterren",
-        "score":0.1113431738
-      },
-      {
-        "word":"recensies",
-        "score":0.1113431738
+        "score":0.1722795044
       },
       {
         "word":"voordat",
-        "score":0.1113431738
+        "score":0.1378236035
+      },
+      {
+        "word":"sterren",
+        "score":0.1378236035
+      },
+      {
+        "word":"recensies",
+        "score":0.1378236035
+      },
+      {
+        "word":"krijgen",
+        "score":0.1176993125
+      },
+      {
+        "word":"contact",
+        "score":0.1033677026
+      },
+      {
+        "word":"betaalt",
+        "score":0.1033677026
       }
     ]
   },
@@ -1237,43 +1237,43 @@
     "keywords":[
       {
         "word":"essent",
-        "score":0.3304006985
+        "score":0.3334264276
       },
       {
         "word":"vattenfall",
-        "score":0.3304006985
-      },
-      {
-        "word":"consumenten",
-        "score":0.1652003492
-      },
-      {
-        "word":"consumentenbond",
-        "score":0.1652003492
-      },
-      {
-        "word":"tarieven",
-        "score":0.1652003492
+        "score":0.3334264276
       },
       {
         "word":"massaclaim",
-        "score":0.1652003492
-      },
-      {
-        "word":"prijzen",
-        "score":0.1652003492
-      },
-      {
-        "word":"vereniging",
-        "score":0.1652003492
-      },
-      {
-        "word":"2022",
-        "score":0.1652003492
+        "score":0.1667132138
       },
       {
         "word":"huis",
-        "score":0.1652003492
+        "score":0.1667132138
+      },
+      {
+        "word":"consumenten",
+        "score":0.1667132138
+      },
+      {
+        "word":"prijzen",
+        "score":0.1667132138
+      },
+      {
+        "word":"tarieven",
+        "score":0.1667132138
+      },
+      {
+        "word":"consumentenbond",
+        "score":0.1667132138
+      },
+      {
+        "word":"vereniging",
+        "score":0.1667132138
+      },
+      {
+        "word":"2022",
+        "score":0.1667132138
       }
     ]
   },
@@ -1571,43 +1571,43 @@
     "keywords":[
       {
         "word":"bosch",
-        "score":0.4916292579
+        "score":0.4937009794
       },
       {
         "word":"banen",
-        "score":0.4301756007
-      },
-      {
-        "word":"onderdelen",
-        "score":0.245814629
+        "score":0.431988357
       },
       {
         "word":"auto",
-        "score":0.245814629
+        "score":0.2468504897
+      },
+      {
+        "word":"onderdelen",
+        "score":0.2468504897
       },
       {
         "word":"verdwijnen",
-        "score":0.1843609717
-      },
-      {
-        "word":"tegenvallende",
-        "score":0.1229073145
-      },
-      {
-        "word":"dieselauto",
-        "score":0.1229073145
+        "score":0.1851378673
       },
       {
         "word":"volkswagen",
-        "score":0.1229073145
+        "score":0.1234252449
       },
       {
-        "word":"schrappen",
-        "score":0.1229073145
+        "word":"gemaakt",
+        "score":0.1234252449
       },
       {
-        "word":"stuttgart",
-        "score":0.1229073145
+        "word":"dieselauto",
+        "score":0.1234252449
+      },
+      {
+        "word":"kosten",
+        "score":0.1234252449
+      },
+      {
+        "word":"wereldwijde",
+        "score":0.1234252449
       }
     ]
   },
@@ -2333,43 +2333,43 @@
     "keywords":[
       {
         "word":"china",
-        "score":0.543742132
+        "score":0.5595947553
       },
       {
         "word":"materialen",
-        "score":0.3927026509
+        "score":0.4041517677
       },
       {
         "word":"kritieke",
-        "score":0.3020789622
-      },
-      {
-        "word":"grondstoffen",
-        "score":0.1510394811
+        "score":0.3108859752
       },
       {
         "word":"nederland",
-        "score":0.1510394811
+        "score":0.1554429876
       },
       {
-        "word":"op",
-        "score":0.1246413888
-      },
-      {
-        "word":"restricties",
-        "score":0.1208315849
+        "word":"grondstoffen",
+        "score":0.1554429876
       },
       {
         "word":"groot",
-        "score":0.1208315849
+        "score":0.1243543901
+      },
+      {
+        "word":"restricties",
+        "score":0.1243543901
       },
       {
         "word":"uitvoer",
-        "score":0.1208315849
+        "score":0.1243543901
       },
       {
-        "word":"gebruikt",
-        "score":0.0906236887
+        "word":"eu",
+        "score":0.0932657926
+      },
+      {
+        "word":"jaarsma",
+        "score":0.0932657926
       }
     ]
   },
@@ -2723,43 +2723,43 @@
     "keywords":[
       {
         "word":"faillissement",
-        "score":0.3633310622
-      },
-      {
-        "word":"maand",
-        "score":0.2179986373
+        "score":0.3745335304
       },
       {
         "word":"curator",
-        "score":0.2179986373
+        "score":0.2247201182
+      },
+      {
+        "word":"maand",
+        "score":0.2247201182
       },
       {
         "word":"fabriek",
-        "score":0.1654823127
+        "score":0.1705845749
       },
       {
-        "word":"nimbus",
-        "score":0.1453324249
+        "word":"aardappelen",
+        "score":0.1498134121
       },
       {
-        "word":"producent",
-        "score":0.1453324249
+        "word":"aartsen",
+        "score":0.1498134121
       },
       {
         "word":"mccain",
-        "score":0.1453324249
+        "score":0.1498134121
       },
       {
-        "word":"doorstart",
-        "score":0.1453324249
+        "word":"nimbus",
+        "score":0.1498134121
       },
       {
         "word":"productieproces",
-        "score":0.1453324249
+        "score":0.1498134121
       },
       {
-        "word":"pijnlijk",
-        "score":0.1453324249
+        "word":"gelukt",
+        "score":0.1498134121
       }
     ]
   }

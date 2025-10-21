@@ -150,15 +150,26 @@ for row in news_ds["train"]:
 ## TF-IDF Keyword Extraction for SME-filtered articles ##
 import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
+from nltk.corpus import stopwords
+import nltk
+
 
 print("🔧 Building TF-IDF keyword lists for SME-filtered articles...")
+
+# Download and load Dutch stopwords
+nltk.download('stopwords', quiet=True)
+stopword_list = stopwords.words('dutch')
 
 # Build corpus from 'clean' column in the SME-filtered dataset
 # (the split ensures each row already has a 'clean' field)
 corpus = [row["clean"] for row in news_ds["train"] if row.get("clean", "").strip()]
 
 # Build Bag-of-Words (BoW) representation
-vectorizer = CountVectorizer(max_features=10000)
+# Build Bag-of-Words with stopword filtering
+vectorizer = CountVectorizer(
+    max_features=10000,
+    stop_words=stopword_list,
+)
 bows = vectorizer.fit_transform(corpus).toarray()
 vocab = np.array(vectorizer.get_feature_names_out())
 
@@ -216,6 +227,8 @@ train_df.to_json(
 print("TF-IDF keyword extraction completed.")
 print(train_df[["title", "keywords"]].head())
 ## -------------------------------------------------------------- ##
+
+# TEST to see the top 20 keywords from news sources
 from collections import Counter
 
 # aggregate scores
@@ -231,3 +244,10 @@ top_keywords = global_keywords.most_common(20)
 print("\n Top 20 overall SME keywords (deduplicated & sorted):")
 for word, score in top_keywords:
     print(f"{word:<20} {score:.3f}")
+
+# Save keywords to JSON file for visualization
+output_file = "scrapedArticles/top_keywords_sme_nos.json"
+with open(output_file, "w", encoding="utf-8") as f:
+    json.dump(dict(top_keywords), f, ensure_ascii=False, indent=2)
+
+print(f"\n Saved top 20 keywords to {output_file}")
