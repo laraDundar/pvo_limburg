@@ -9,11 +9,11 @@ from geo_filter import build_geo_df
 from sme_filter import run_snorkel
 
 
-with open("scrapedArticles/ncsc.json", "r", encoding="utf-8") as f:
+with open("scrapedArticles/nos_articles_economie.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # We filter out the articles that are not from the region before pre-processing.
-df = build_geo_df("scrapedArticles/ncsc.json", min_conf=0.6)
+df = build_geo_df("scrapedArticles/nos_articles_economie.json", min_conf=0.6)
 
 # We filter out the articles that are not about SMEs before pre-processing.
 df, label_model = run_snorkel(df, min_conf=0.5)
@@ -91,7 +91,7 @@ def word_tokenizer(example, vocab, unknown_token='<unk>'):
 from sklearn.model_selection import train_test_split
 
 # 1) I split the DataFrame into train/test.
-train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
+train_df, test_df = train_test_split(sme_filtered, test_size=0.2, random_state=42)
 
 news_ds = {
     "train": train_df.to_dict(orient="records"),
@@ -145,3 +145,89 @@ for row in news_ds["train"]:
     #print(news_ds["train"][i]["tokens"])
     #print("-" * 40)
 ## -------------------------------------------------------------- ##
+
+## -------------------------------------------------------------- ##
+## TF-IDF Keyword Extraction for SME-filtered articles ##
+import numpy as np
+from sklearn.feature_extraction.text import CountVectorizer
+
+print("🔧 Building TF-IDF keyword lists for SME-filtered articles...")
+
+# Build corpus from 'clean' column in the SME-filtered dataset
+# (the split ensures each row already has a 'clean' field)
+corpus = [row["clean"] for row in news_ds["train"] if row.get("clean", "").strip()]
+
+# Build Bag-of-Words (BoW) representation
+vectorizer = CountVectorizer(max_features=10000)
+bows = vectorizer.fit_transform(corpus).toarray()
+vocab = np.array(vectorizer.get_feature_names_out())
+
+# Calculate IDF
+def calculate_idf(bows):
+    """
+    Calculates the IDF for each word in the vocabulary.
+    Args:
+        bows: numpy array of shape (N x D)
+    Returns: numpy array of size D with IDF values for each token.
+    """
+    N = bows.shape[0]
+    df = np.count_nonzero(bows, axis=0)
+    df = np.where(df == 0, 1, df)  # avoid division by zero
+    idf = np.log10(N / df)
+    return idf
+
+idf = calculate_idf(bows)
+
+# Compute TF-IDF for each document
+def compute_tfidf_matrix(bows, idf):
+    tfidf_matrix = bows * idf
+    norms = np.linalg.norm(tfidf_matrix, axis=1, keepdims=True)
+    norms[norms == 0] = 1
+    return tfidf_matrix / norms
+
+tfidf_matrix = compute_tfidf_matrix(bows, idf)
+
+# Extract top-k keywords per document
+def extract_keywords(tfidf_matrix, vocab, top_k=10):
+    keywords = []
+    for row in tfidf_matrix:
+        top_indices = row.argsort()[-top_k:][::-1]
+        top_words = vocab[top_indices]
+        top_scores = row[top_indices]
+        keywords.append(list(zip(top_words, top_scores)))
+    return keywords
+
+article_keywords = extract_keywords(tfidf_matrix, vocab, top_k=10)
+
+# Attach top keywords back to the training DataFrame
+train_df = pd.DataFrame(news_ds["train"]).copy()
+train_df["keywords"] = [
+    [{"word": w, "score": float(s)} for w, s in kws] for kws in article_keywords
+]
+
+# Save results to a new JSON file
+train_df.to_json(
+    "scrapedArticles/nos_sme_keywords.json",
+    orient="records",
+    indent=2,
+    force_ascii=False,
+)
+
+print("TF-IDF keyword extraction completed.")
+print(train_df[["title", "keywords"]].head())
+## -------------------------------------------------------------- ##
+from collections import Counter
+
+# aggregate scores
+global_keywords = Counter()
+for kws in article_keywords:
+    for w, s in kws:
+        global_keywords[w] += float(s)
+
+# deduplicate (Counter already merges same words)
+# sort descending
+top_keywords = global_keywords.most_common(20)
+
+print("\n Top 20 overall SME keywords (deduplicated & sorted):")
+for word, score in top_keywords:
+    print(f"{word:<20} {score:.3f}")
