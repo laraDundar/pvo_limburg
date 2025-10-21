@@ -9,11 +9,11 @@ from geo_filter import build_geo_df
 from sme_filter import run_snorkel
 
 
-with open("scrapedArticles/nos_articles_economie.json", "r", encoding="utf-8") as f:
+with open("scrapedArticles/limburger_economie.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # We filter out the articles that are not from the region before pre-processing.
-df = build_geo_df("scrapedArticles/nos_articles_economie.json", min_conf=0.6)
+df = build_geo_df("scrapedArticles/limburger_economie.json", min_conf=0.6)
 
 # We filter out the articles that are not about SMEs before pre-processing.
 df, label_model = run_snorkel(df, min_conf=0.5)
@@ -89,6 +89,16 @@ def word_tokenizer(example, vocab, unknown_token='<unk>'):
 ## TESTING AREA ##
 ## This is the where Train/Test split + vocab + word tokenization for NOS articles is being done. ##
 from sklearn.model_selection import train_test_split
+import sys
+
+# --- after building sme_filtered ---
+if len(sme_filtered) == 0:
+    print("⚠️ No SME articles found — skipping split.")
+    sys.exit(0)
+elif len(sme_filtered) < 3:
+    print(f"⚠️ Only {len(sme_filtered)} SME article(s) found — skipping train/test split.")
+    sys.exit(0)
+
 
 # 1) I split the DataFrame into train/test.
 train_df, test_df = train_test_split(sme_filtered, test_size=0.2, random_state=42)
@@ -218,7 +228,7 @@ train_df["keywords"] = [
 
 # Save results to a new JSON file
 train_df.to_json(
-    "scrapedArticles/nos_sme_keywords.json",
+    "scrapedArticles/limburger_economie_sme_keywords.json",
     orient="records",
     indent=2,
     force_ascii=False,
@@ -246,7 +256,7 @@ for word, score in top_keywords:
     print(f"{word:<20} {score:.3f}")
 
 # Save keywords to JSON file for visualization
-output_file = "scrapedArticles/top_keywords_sme_nos.json"
+output_file = "scrapedArticles/top_keywords_sme_limburger_economie.json"
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(dict(top_keywords), f, ensure_ascii=False, indent=2)
 
