@@ -43,7 +43,7 @@ def lf_explicit_sme(x):
         text
     ) else ABSTAIN
 
-# Generic "bedrijf" mentions → captures generic “bedrijf/onderneming” references.
+# Generic business/company mentions → captures generic “bedrijf/onderneming” references.
 @labeling_function()
 def lf_generic_bedrijf(x):
     text = (x.get("clean_geo") or "").lower()
@@ -60,55 +60,46 @@ def lf_generic_bedrijf(x):
 # General sector terms → horeca, winkel, bouwbedrijf, transport, etc. (from CBS)
 @labeling_function()
 def lf_general_sector_terms(x):
+    """
+    Returns SME if any of the sector-specific LFs (e.g., horeca, bouw, ict, etc.)
+    detect a sector-related term in the text. Acts as a general 'sector mention' flag.
+    """
     text = (x.get("clean_geo") or "").lower()
-    return SME if re.search(
-        r"\b("
+
+    # List of compiled regex patterns for efficiency
+    sector_patterns = [
         # Agriculture
-        r"landbouw|akkerbouw|tuinbouw|bosbouw|visserij|fishing|forestry|agriculture|farm(er|ing)|greenhouse|kwekerij|veeteelt|pluimvee"
-        r"|"
-        # Mining
-        r"delfstoffenwinning|mining|mijnbouw|groeve"
-        r"|"
-        # Industry / Energy / Water / Waste
-        r"industrie|fabriek(en)?|manufacturing|produceren|productiebedrijf|energievoorziening|energy supply|energiebedrijf"
-        r"|waterbedrijf|watermaatschappij|afvalbeheer|waste management|recycling|milieudienst"
-        r"|"
+        r"\b(landbouw|akkerbouw|tuinbouw|bosbouw|visserij|kwekerij|veeteelt|pluimvee|fishing|farm(er|ing)|agriculture|greenhouse|forestry)\b",
+        # Industry / Energy / Utilities
+        r"\b(industrie|fabriek(en)?|productiebedrijf|manufacturing|energiebedrijf|energy supply|energievoorziening|waterbedrijf|watermaatschappij|afvalbeheer|recycling|waste management|milieudienst)\b",
         # Construction
-        r"bouwnijverheid|bouwbedrijf|aannemer(s)?|installatiebedrijf|constructie|bouwsector|bouwvakker"
-        r"|"
-        # Trade / Retail
-        r"handel|detailhandel|groothandel|winkel|shop|store|supermarkt|bakker(ij)?|slager(ij)?|kapsalon|drogisterij|webwinkel|e-commerce"
-        r"|"
-        # Transport / Storage
-        r"vervoer|transport(bedrijf)?|logistiek|opslag|magazijn|koerier(s)?|distributiecentrum|transport and storage"
-        r"|"
-        # Hospitality
-        r"horeca|restaurant|café|bar|hotel|snackbar|catering|hospitality"
-        r"|"
-        # Info & Communication + Cybersecurity extensions
-        r"informatie en communicatie|ict|it|softwarebedrijf|software company|telecom|mediabedrijf|uitgeverij|communicatiebureau"
-        r"|cyberbedrijf|cybersecurity|cyberweerbaarheid|digitale weerbaarheid|digitale veiligheid|informatiebeveiliging|"
-        r"beveiligingsbedrijf|veilig ondernemen|cybercrime|phishing|ransomware"
-        r"|"
-        # Financial
-        r"financiële dienstverlening|boekhoud(kantoor)?|accountantskantoor|administratiekantoor|verzekeringskantoor"
-        r"|"
-        # Real Estate
-        r"makelaar|vastgoed|real estate|woningcorporatie|property rental|onroerend goed"
-        r"|"
-        # Specialist Business Services
-        r"adviesbureau|consultancy|marketingbureau|ingenieursbureau|juridisch advies|advocatenkantoor|specialist business services"
-        r"|"
-        # Rental & Other Biz Services
-        r"uitzendbureau|detacheringsbureau|schoonmaakbedrijf|beveiligingsbedrijf|facility services"
-        r"|"
-        # Education / Health / Culture
-        r"onderwijsinstelling|basisschool|middelbare school|kinderopvang|school|training|opleidingsinstituut"
-        r"|gezondheidszorg|welzijnszorg|praktijk|kliniek|ziekenhuis|fysiotherapie|zorginstelling"
-        r"|sportschool|fitnesscentrum|theater|museum|vereniging|cultureel centrum|recreatiebedrijf"
-        r")\b",
-        text
-    ) else ABSTAIN
+        r"\b(bouwbedrijf|bouwnijverheid|aannemer(s)?|installatiebedrijf|constructie|bouwsector|bouwvakker)\b",
+        # Retail / Trade
+        r"\b(handel|detailhandel|groothandel|winkel|supermarkt|bakker(ij)?|slager(ij)?|kapsalon|drogisterij|webwinkel|e-commerce|shop|store)\b",
+        # Transport / Logistics
+        r"\b(transport(bedrijf)?|vervoer|logistiek|koerier(s)?|magazijn|opslag|distributiecentrum|transport and storage)\b",
+        # Horeca
+        r"\b(horeca|restaurant|café|bar|hotel|snackbar|catering|hospitality)\b",
+        # IT / Media
+        r"\b(ict|it|softwarebedrijf|software company|telecom|mediabedrijf|uitgeverij|communicatiebureau|cyberbedrijf|cybersecurity|digitale weerbaarheid|digitale veiligheid|informatiebeveiliging|veilig ondernemen)\b",
+        # Finance
+        r"\b(financiële dienstverlening|boekhoud(kantoor)?|accountantskantoor|administratiekantoor|verzekeringskantoor|bank|verzekeraar)\b",
+        # Real estate
+        r"\b(makelaar|vastgoed|real estate|woningcorporatie|onroerend goed|property rental)\b",
+        # Professional / Legal / Consultancy
+        r"\b(adviesbureau|consultancy|marketingbureau|ingenieursbureau|juridisch advies|advocatenkantoor|communicatieadvies|specialist business services)\b",
+        # Health / Education
+        r"\b(school|onderwijsinstelling|training|opleidingsinstituut|kinderopvang|basisschool|middelbare school|praktijk|kliniek|ziekenhuis|zorginstelling|fysiotherapie|gezondheidszorg|welzijnszorg)\b",
+        # Recreation / Culture
+        r"\b(sportschool|fitnesscentrum|sportvereniging|theater|museum|recreatiebedrijf|cultureel centrum|vereniging)\b",
+    ]
+
+    # Return SME if any sector pattern matches
+    for pattern in sector_patterns:
+        if re.search(pattern, text):
+            return SME
+
+    return ABSTAIN
 
 
 # Generic entrepreneurship terms → ondernemer, zelfstandige, start-up, zzp.
@@ -162,10 +153,12 @@ def lf_accidents_crime(x):
 @labeling_function()
 def lf_sme_cybercrime(x):
     text = (x.get("clean_geo") or "").lower()
-    if re.search(r"\b(mkb|bedrijf|ondernemer|zaak|organisatie)\b", text) and \
-       re.search(r"\b(cyber|digitale|phishing|ransomware|weerbaarheid|veiligheid|cybercrime|hack)\b", text):
-        return SME
-    return ABSTAIN
+    return SME if re.search(
+        r"\b(mkb|bedrijf|ondernemer|zaak|organisatie)\b", text
+    ) and re.search(
+        r"\b(cyber|digitale|phishing|ransomware|hack|veiligheid|weerbaarheid|cybercrime)\b", text
+    ) else ABSTAIN
+
 
 @labeling_function()
 def lf_sports_entertainment(x):
@@ -174,6 +167,25 @@ def lf_sports_entertainment(x):
         r"\b(honkbal|voetbal|sport|theater|film|serie|muziek|concert|festival|wedstrijden)\b", 
         text
     ) else ABSTAIN
+
+@labeling_function()
+def lf_business_crime(x):
+    text = (x.get("clean_geo") or "").lower()
+    # Business + crime co-occurrence
+    if re.search(r"\b(bedrijf|onderneming|zaak|mkb|ondernemer|directeur|werkgever|adviesbureau)\b", text) and \
+       re.search(r"\b(fraude|oplichting|witwassen|corruptie|diefstal|verduistering|afpersing|valsheid in geschrifte|onderzoek\s+naar|aangifte)\b", text):
+        return SME
+    return ABSTAIN
+
+@labeling_function()
+def lf_bankruptcy_only(x):
+    text = (x.get("clean_geo") or "").lower()
+    # Detect purely financial insolvency without crime
+    if re.search(r"\b(failliet|faillissement|curator|doorstart|herstructurering)\b", text) and \
+       not re.search(r"\b(fraude|oplichting|witwassen|corruptie|diefstal|verduistering|aangifte|onderzoek)\b", text):
+        return NOT_SME
+    return ABSTAIN
+
 
 
 ## -------------------------------------------------------------- ##
@@ -195,6 +207,8 @@ def run_snorkel(df, lfs=None, min_conf=0.6):
     lf_politics_domestic,
     lf_sme_cybercrime,
     lf_sports_entertainment,
+    lf_business_crime,
+    #lf_bankruptcy_only,
     lf_government_only
 ]
 

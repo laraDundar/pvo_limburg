@@ -9,11 +9,11 @@ from geo_filter import build_geo_df
 from sme_filter import run_snorkel
 
 
-with open("scrapedArticles/limburger_economie.json", "r", encoding="utf-8") as f:
+with open("all_articles.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
 # We filter out the articles that are not from the region before pre-processing.
-df = build_geo_df("scrapedArticles/limburger_economie.json", min_conf=0.6)
+df = build_geo_df("all_articles.json", min_conf=0.6)
 
 # We filter out the articles that are not about SMEs before pre-processing.
 df, label_model = run_snorkel(df, min_conf=0.5)
@@ -228,7 +228,7 @@ train_df["keywords"] = [
 
 # Save results to a new JSON file
 train_df.to_json(
-    "scrapedArticles/limburger_economie_sme_keywords.json",
+    "keywords/all_articles_keywords.json",
     orient="records",
     indent=2,
     force_ascii=False,
@@ -256,7 +256,7 @@ for word, score in top_keywords:
     print(f"{word:<20} {score:.3f}")
 
 # Save keywords to JSON file for visualization
-output_file = "scrapedArticles/top_keywords_sme_limburger_economie.json"
+output_file = "keywords/all_articles_top_keywords.json"
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(dict(top_keywords), f, ensure_ascii=False, indent=2)
 
