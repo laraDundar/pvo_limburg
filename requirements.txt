@@ -1,0 +1,12 @@
+requests
+feedparser
+beautifulsoup4
+readability-lxml
+pandas
+geoNames
+spacy
+snorkel
+wordninja
+numpy
+scikit-learn
+nltk
