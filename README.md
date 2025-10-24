@@ -27,3 +27,10 @@
 >> run this in the terminal(if you are getting UnauthorizedAccess error): Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 >> Then activate your environment with: C:\Users etc. from your laptop setup\.venv\Scripts\Activate.ps1
+
+# What We Have Learned
+Through this prototype, we learned how to transform unstructured information into meaningful insights that can support decision-making for SMEs and organizations such as PVO Limburg. We gained hands-on experience with the full data pipeline — from data collection and integration (web scraping and merging external data sources) to text preprocessing and cleaning for analysis.
+
+We explored multiple natural language processing (NLP) techniques, including TF-IDF, weak supervision and named entity recognition, and trend detection, to identify emerging themes related to crime, safety, and entrepreneurship in Netherlands and regions around. This helped us understand how AI can be applied to detect patterns and anomalies across diverse text sources such as news articles, police reports, and newsletters.
+
+In addition, we learned to design interactive dashboards using Streamlit for data visualization, allowing users to explore and interpret trends at both operational and strategic levels.
