@@ -10,3 +10,4 @@ wordninja
 numpy
 scikit-learn
 nltk
+streamlit
