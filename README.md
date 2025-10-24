@@ -19,6 +19,7 @@
 
 >> to run dashboard.py --> Use streamlit run dashboard.py
 >> python -m streamlit run dashboard.py --> If the previous command doesn't work.
+>> to stop running the dashboard just do ctrl + c.
 
 # Setup Instructions 
 >> pip install -r requirements.txt
