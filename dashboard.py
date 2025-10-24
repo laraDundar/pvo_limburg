@@ -183,44 +183,32 @@ try:
     # Date filter new
     # -------------------------
     date_col = "published"
-    if date_col in filtered_df.columns:
+    if date_col in df.columns:
+        start_d, end_d = st.session_state.get("date_range", (_min_date, _max_date))
+        start_d, end_d = _clamp_date_range(_min_date, _max_date, (start_d, end_d))
+
+        _picked = st.sidebar.date_input(
+            "Filter by date",
+            value=(start_d, end_d),
+            min_value=_min_date,
+            max_value=_max_date,
+            key="date_range_widget",
+        )
+
+        if isinstance(_picked, (list, tuple)) and len(_picked) == 2:
+            start_date, end_date = _picked
+        else:
+            start_date = end_date = _picked
+
+        start_date, end_date = _clamp_date_range(_min_date, _max_date, (start_date, end_date))
+        st.session_state.date_range = (start_date, end_date)
+
         tmp_dates = pd.to_datetime(filtered_df[date_col], errors="coerce")
         filtered_df = filtered_df.loc[tmp_dates.notna()].copy()
         tmp_dates = tmp_dates.loc[tmp_dates.notna()]
-
-        if not tmp_dates.empty:
-            min_date = tmp_dates.min().date()
-            max_date = tmp_dates.max().date()
-
-            st.session_state.date_range = _clamp_date_range(
-                min_date, max_date, st.session_state.get("date_range", (min_date, max_date))
-            )
-
-            _default_range = tuple(st.session_state.date_range)
-
-            _picked = st.sidebar.date_input(
-                "Filter by date",
-                value=_default_range,
-                min_value=min_date,
-                max_value=max_date,
-                key="date_range_widget"
-            )
-
-            #normalizing widget output
-            if isinstance(_picked, (list, tuple)) and len(_picked) == 2:
-                start_date, end_date = _picked
-            else:
-                # single day mode
-                start_date = end_date = _picked
-
-            #clamp and persistence
-            start_date, end_date = _clamp_date_range(min_date, max_date, (start_date, end_date))
-            st.session_state.date_range = (start_date, end_date)
-
-            #range filter
-            filtered_df = filtered_df[
-                (tmp_dates.dt.date >= start_date) & (tmp_dates.dt.date <= end_date)
-                ]
+        filtered_df = filtered_df[
+            (tmp_dates.dt.date >= start_date) & (tmp_dates.dt.date <= end_date)
+            ]
 
     # -------------------------
     # Display filtered DataFrame
