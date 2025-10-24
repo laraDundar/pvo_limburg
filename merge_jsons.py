@@ -55,7 +55,7 @@ def csv_to_json(csv_file_path, json_file_path, feed):
     )
 
     # Keep only the needed columns, in desired order
-    df = df[['published', 'title', 'url']]
+    df = df[['published', 'title', 'url', 'full_text']]
     df['feed'] = feed
     
     # Convert to JSON and save

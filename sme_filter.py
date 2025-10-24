@@ -202,7 +202,7 @@ def run_snorkel(df, lfs=None, min_conf=0.6):
     lf_generic_bedrijf,
     lf_general_sector_terms,
     lf_generic_entrepreneurship,
-    lf_international_politics,
+    # lf_international_politics,
     lf_accidents_crime,
     lf_politics_domestic,
     lf_sme_cybercrime,
