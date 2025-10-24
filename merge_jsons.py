@@ -42,7 +42,7 @@ def merge_json_files(input_dir: str, output_file: str):
 
     print(f"💾 Saved merged file to: {output_file}")
 
-def csv_to_json(csv_file_path, json_file_path):
+def csv_to_json(csv_file_path, json_file_path, feed):
     # Read CSV file
     df = pd.read_csv(csv_file_path)
 
@@ -56,6 +56,7 @@ def csv_to_json(csv_file_path, json_file_path):
 
     # Keep only the needed columns, in desired order
     df = df[['published', 'title', 'url']]
+    df['feed'] = feed
     
     # Convert to JSON and save
     df.to_json(json_file_path, orient='records', indent=4, force_ascii=False)
@@ -63,5 +64,5 @@ def csv_to_json(csv_file_path, json_file_path):
     print(f"✅ Successfully converted {csv_file_path} → {json_file_path}")
 
 if __name__ == "__main__":
-    csv_to_json("articles\\security_nl_articles.csv", f"{INPUT_DIR}\\security_nl_articles.json")
+    csv_to_json("articles\\security_nl_articles.csv", f"{INPUT_DIR}\\security_nl_articles.json", 'security.nl')
     merge_json_files(INPUT_DIR, OUTPUT_FILE)
