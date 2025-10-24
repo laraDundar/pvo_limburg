@@ -5,8 +5,7 @@ import json
 # -------------------------
 # 🔧 Hard-coded JSON file path
 # -------------------------
-FILE_PATH = "keywords\\all_articles_keywords.json"  # 👈 change this to your file path
-
+FILE_PATH = "keywords\\all_articles_keywords.json"  
 st.title("📊 JSON to DataFrame Viewer (with Filters)")
 
 try:
