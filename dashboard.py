@@ -6,7 +6,7 @@ import re
 from streamlit_folium import st_folium
 import folium
 
-
+# get all geonNames in limburg
 @st.cache_data
 def limburg_box():
     geo_df = pd.read_csv(
@@ -95,7 +95,7 @@ try:
         ]
 
     # -------------------------
-    # 📅 Date filter
+    # Date filter
     # -------------------------
     date_col = "published"
     if date_col in filtered_df.columns:
@@ -119,7 +119,7 @@ try:
             ]
 
     # -------------------------
-    # 📈 Display filtered DataFrame
+    # Display filtered DataFrame
     # -------------------------
     # st.subheader("📈 Filtered DataFrame")
     # st.dataframe(filtered_df[cols_to_show])
@@ -190,10 +190,10 @@ try:
         st.info("No cached geocoded locations found.")
 
     # -------------------------
-    # 🧾 Show raw JSON
+    # Show raw JSON
     # -------------------------
-    with st.expander("Show raw JSON data"):
-        st.json(data)
+    # with st.expander("Show raw JSON data"):
+    #     st.json(data)
 
 except FileNotFoundError:
     st.error(f"File not found at path: `{FILE_PATH}`")
