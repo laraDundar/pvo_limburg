@@ -4,6 +4,62 @@ import json
 import os
 from streamlit_folium import st_folium
 import folium
+from folium.plugins import HeatMap, MarkerCluster
+from datetime import datetime, date
+
+#streamlit help
+def _rerun():
+    try:
+        st.rerun()
+    except AttributeError:
+        st.experimental_rerun()
+
+
+def _parse_to_date(x):
+    if isinstance(x, date):
+        return x
+    if isinstance(x, str):
+        try:
+            return datetime.fromisoformat(x).date()
+        except Exception:
+            pass
+    return datetime.today().date()
+
+def _clamp_date_range(min_d: date, max_d: date, value):
+    if not isinstance(value, (list, tuple)) or len(value) != 2:
+        return (min_d, max_d)
+    sd, ed = _parse_to_date(value[0]), _parse_to_date(value[1])
+    if sd < min_d: sd = min_d
+    if sd > max_d: sd = max_d
+    if ed < min_d: ed = min_d
+    if ed > max_d: ed = max_d
+    if sd > ed:
+        sd, ed = min_d, max_d
+    return (sd, ed)
+
+
+
+#preset storage
+PRESETS_FILE = os.path.join("cache", "filter_presets.json")
+
+def _ensure_cache_dir():
+    os.makedirs("cache", exist_ok=True)
+    os.makedirs("digests", exist_ok=True)
+
+def _load_presets():
+    _ensure_cache_dir()
+    if os.path.exists(PRESETS_FILE):
+        with open(PRESETS_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {}
+
+def _save_presets(presets: dict):
+    _ensure_cache_dir()
+    with open(PRESETS_FILE, "w", encoding="utf-8") as f:
+        json.dump(presets, f, ensure_ascii=False, indent=2, default=str)
+
+
+
 
 # all geoNames in Limburg
 @st.cache_data
@@ -18,9 +74,9 @@ def limburg_box():
             "latitude","longitude","feature_class","feature_code","country_code",
             "cc2","admin1_code","admin2_code","admin3_code","admin4_code",
             "population","elevation","dem","timezone","modification_date"
-            ]
-        )
-    
+        ]
+    )
+
     geo_df = geo_df[["name", "latitude", "longitude", "admin1_code"]]
     geo_in_box = geo_df[geo_df["admin1_code"] == 5]
 
@@ -48,7 +104,7 @@ try:
     # -------------------------
     # Filtering UI
     # -------------------------
-    st.sidebar.header("🔎 Filter Options")
+    st.sidebar.header("Filter Options")
 
     # Column selector
     # cols_to_show = st.sidebar.multiselect(
@@ -57,8 +113,36 @@ try:
     #     default=df.columns.tolist()
     # )
 
-    # Text search filter
-    text_filter = st.sidebar.text_input("Search text (applies to all string columns)")
+
+
+    #session-state defaults, global options for reset/presets
+    feed_options_all = df["feed"].dropna().unique().tolist() if "feed" in df.columns else []
+    if "published" in df.columns:
+        _tmp_dates = pd.to_datetime(df["published"], errors="coerce")
+        _min_date = _tmp_dates.min().date() if _tmp_dates.notna().any() else datetime.today().date()
+        _max_date = _tmp_dates.max().date() if _tmp_dates.notna().any() else datetime.today().date()
+    else:
+        _min_date = _max_date = datetime.today().date()
+
+    if "text_filter" not in st.session_state: st.session_state.text_filter = ""
+    if "selected_feeds" not in st.session_state: st.session_state.selected_feeds = feed_options_all
+    if "location_search" not in st.session_state: st.session_state.location_search = ""
+    if "date_range" not in st.session_state: st.session_state.date_range = (_min_date, _max_date)
+    if "_pending_preset" in st.session_state:
+        p = st.session_state.pop("_pending_preset")
+        st.session_state.text_filter = p.get("text_filter", "")
+        st.session_state.selected_feeds = p.get("selected_feeds", feed_options_all)
+        st.session_state.location_search = p.get("location_search", "")
+        dr = p.get("date_range", (_min_date, _max_date))
+        if isinstance(dr, (list, tuple)) and len(dr) == 2:
+            st.session_state.date_range = (_parse_to_date(dr[0]), _parse_to_date(dr[1]))
+        else:
+            st.session_state.date_range = (_min_date, _max_date)
+
+    #text search filter
+    text_filter = st.sidebar.text_input("Search text (applies to all string columns)", key="text_filter")
+
+
 
     filtered_df = df.copy()
     if text_filter:
@@ -71,7 +155,7 @@ try:
     if "feed" in filtered_df.columns:
         feed_options = filtered_df["feed"].dropna().unique().tolist()
         selected_feeds = st.sidebar.multiselect(
-            "Filter by feed", options=feed_options, default=feed_options
+            "Filter by feed", options=feed_options, default=st.session_state.get("selected_feeds", feed_options_all), key="selected_feeds"
         )
         filtered_df = filtered_df[filtered_df["feed"].isin(selected_feeds)]
 
@@ -80,7 +164,7 @@ try:
     # -------------------------
     location_search = st.sidebar.text_input(
         "Filter by locations (type one or more tags, separated by commas)",
-        value=""
+        value=st.session_state.location_search, key="location_search"
     )
 
     if location_search.strip():
@@ -96,28 +180,47 @@ try:
         ]
 
     # -------------------------
-    # Date filter
+    # Date filter new
     # -------------------------
     date_col = "published"
     if date_col in filtered_df.columns:
-        filtered_df[date_col] = pd.to_datetime(filtered_df[date_col], errors="coerce")
-        filtered_df = filtered_df.dropna(subset=[date_col])
+        tmp_dates = pd.to_datetime(filtered_df[date_col], errors="coerce")
+        filtered_df = filtered_df.loc[tmp_dates.notna()].copy()
+        tmp_dates = tmp_dates.loc[tmp_dates.notna()]
 
-        if not filtered_df.empty:
-            min_date = filtered_df[date_col].min().date()
-            max_date = filtered_df[date_col].max().date()
+        if not tmp_dates.empty:
+            min_date = tmp_dates.min().date()
+            max_date = tmp_dates.max().date()
 
-            start_date, end_date = st.sidebar.date_input(
-                "Filter by date",
-                value=(min_date, max_date),
-                min_value=min_date,
-                max_value=max_date
+            st.session_state.date_range = _clamp_date_range(
+                min_date, max_date, st.session_state.get("date_range", (min_date, max_date))
             )
 
+            _default_range = tuple(st.session_state.date_range)
+
+            _picked = st.sidebar.date_input(
+                "Filter by date",
+                value=_default_range,
+                min_value=min_date,
+                max_value=max_date,
+                key="date_range_widget"
+            )
+
+            #normalizing widget output
+            if isinstance(_picked, (list, tuple)) and len(_picked) == 2:
+                start_date, end_date = _picked
+            else:
+                # single day mode
+                start_date = end_date = _picked
+
+            #clamp and persistence
+            start_date, end_date = _clamp_date_range(min_date, max_date, (start_date, end_date))
+            st.session_state.date_range = (start_date, end_date)
+
+            #range filter
             filtered_df = filtered_df[
-                (filtered_df[date_col].dt.date >= start_date)
-                & (filtered_df[date_col].dt.date <= end_date)
-            ]
+                (tmp_dates.dt.date >= start_date) & (tmp_dates.dt.date <= end_date)
+                ]
 
     # -------------------------
     # Display filtered DataFrame
@@ -126,10 +229,55 @@ try:
     # st.dataframe(filtered_df[cols_to_show])
 
 
+    #filter summary
+    _sd, _ed = st.session_state.get("date_range", (_min_date, _max_date))
+    st.markdown(
+        f"**Current filters:** {len(st.session_state.get('selected_feeds', []))} feed(s) • "
+        f"{_sd} → {_ed} • search: “{st.session_state.get('text_filter','')}” • "
+        f"locations: “{st.session_state.get('location_search','')}”"
+    )
+    st.write(f"**{len(filtered_df)}** articles match.")
+
+
+    #presets
+    st.sidebar.markdown("---")
+    st.sidebar.subheader("Presets")
+    _presets = _load_presets()
+    _names = ["—"] + list(_presets.keys())
+    c_load, c_btn = st.sidebar.columns([3,1])
+    with c_load:
+        _sel = c_load.selectbox("Load preset", options=_names)
+    with c_btn:
+        if st.button("Load"):
+            if _sel != "—":
+                st.session_state["_pending_preset"] = _presets[_sel]
+                _rerun()
+
+    _new_preset = st.sidebar.text_input("Save current as…", placeholder="e.g., Limburg 90d")
+    if st.sidebar.button("Save preset") and _new_preset:
+        _presets[_new_preset] = {
+            "text_filter": st.session_state.text_filter,
+            "selected_feeds": st.session_state.selected_feeds,
+            "location_search": st.session_state.location_search,
+            "date_range": list(st.session_state.date_range),
+        }
+        _save_presets(_presets)
+        st.sidebar.success(f"Saved preset “{_new_preset}”.")
+
+    #reset
+    if st.sidebar.button("Reset filters"):
+        st.session_state["_pending_preset"] = {
+            "text_filter": "",
+            "selected_feeds": feed_options_all,
+            "location_search": "",
+            "date_range": (_min_date, _max_date),
+        }
+        _rerun()
+
     # -------------------------
     # Map Section — Using Cached Geocoded Data
     # -------------------------
-    st.subheader("🗺️ Interactive Article Map")
+    st.subheader("Interactive Article Map")
 
     def geocode_locations_with_cache(rows, cache_file="cache/geocode_cache.json"):
         """Load cached coordinates (no warnings, no API calls)."""
@@ -170,21 +318,29 @@ try:
 
     geo_records = geocode_locations_with_cache(filtered_df)
 
-    # Display the map
+    # Display the map and types of it
     if geo_records:
+
+        map_mode = st.radio("Map mode", ["Heatmap", "Markers"], horizontal=True)
+
         m = folium.Map(location=[52.1, 5.3], zoom_start=7)
 
-        for record in geo_records:
-            popup_html = "<b>{}</b><br>{}".format(
-                record["location"],
-                "<br>".join([f"• {t}" for t in record["titles"]])
-            )
-            folium.Marker(
-                [record["lat"], record["lon"]],
-                popup=popup_html,
-                tooltip=f"{record['location']} ({len(record['titles'])} article(s))",
-                icon=folium.Icon(color="blue", icon="info-sign"),
-            ).add_to(m)
+        if map_mode == "Heatmap":
+            heat_data = [[r["lat"], r["lon"], len(r["titles"])] for r in geo_records]
+            HeatMap(heat_data, radius=18, blur=15, max_zoom=6).add_to(m)
+        else:
+            cluster = MarkerCluster().add_to(m)
+            for record in geo_records:
+                popup_html = "<b>{}</b><br>{}".format(
+                    record["location"],
+                    "<br>".join([f"• {t}" for t in record["titles"]])
+                )
+                folium.Marker(
+                    [record["lat"], record["lon"]],
+                    popup=popup_html,
+                    tooltip=f"{record['location']} ({len(record['titles'])} article(s))",
+                    icon=folium.Icon(color="blue", icon="info-sign"),
+                ).add_to(cluster)
 
         st_folium(m, width=1000, height=600)
         st.write(f"{len(filtered_df)} Articles")
@@ -214,14 +370,14 @@ try:
 
     spotlight_df = pd.concat([in_limburg_df, sme_df])
     spotlight_df = spotlight_df[~spotlight_df.index.duplicated(keep='first')]
-    st.subheader(f"🔥Spotlight")
+    st.subheader(f"Spotlight")
     st.dataframe(spotlight_df)
 
 
     # -------------------------
     # Top Keywords from Filtered Articles
     # -------------------------
-    st.subheader("🔝 Top Keywords (Filtered Selection)")
+    st.subheader("Top Keywords (Filtered Selection)")
 
     def extract_keywords(df):
         all_keywords = []
