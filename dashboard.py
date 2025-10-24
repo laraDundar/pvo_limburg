@@ -31,17 +31,11 @@ def limburg_box():
     return locations_in_box
 limburg = limburg_box()
 
-
-# -------------------------
-# 🔧 Hard-coded JSON file path
-# -------------------------
 FILE_PATH = "keywords\\all_articles_keywords.json"
 st.title("📊 Dashboard Prototype 1")
 
 try:
-    # -------------------------
-    # 📂 Load JSON data
-    # -------------------------
+
     with open(FILE_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -51,7 +45,7 @@ try:
     # st.write(f"Rows: {len(df)}, Columns: {len(df.columns)}")
 
     # -------------------------
-    # 🔍 Sidebar Filtering UI
+    # Filtering UI
     # -------------------------
     st.sidebar.header("🔎 Filter Options")
 
@@ -81,7 +75,7 @@ try:
         filtered_df = filtered_df[filtered_df["feed"].isin(selected_feeds)]
 
     # -------------------------
-    # 📍 Location filter
+    # Location filter
     # -------------------------
     location_search = st.sidebar.text_input(
         "Filter by locations (type one or more tags, separated by commas)",
@@ -131,7 +125,7 @@ try:
     # st.dataframe(filtered_df[cols_to_show])
 
     # -------------------------
-    # 🌍 Map Section — Using Cached Geocoded Data
+    # Map Section — Using Cached Geocoded Data
     # -------------------------
     st.subheader("🗺️ Interactive Article Map")
 
@@ -195,76 +189,16 @@ try:
     else:
         st.info("No cached geocoded locations found.")
 
-    # -----------------------------------------
-    # ARTICLE SPOTLIGHT
-    # -----------------------------------------
-
-    # heuristic 1: in Limburg
-    
-    in_limburg_df = filtered_df[
-        filtered_df['locations'].apply(
-            lambda tags: any(tag.lower() in limburg for tag in tags)
-        )
-    ].copy()
-
-    # heuristic 2: sme probabilty > 0.9 or head k?
-    k = 5
-    sme_df = filtered_df.sort_values(by='sme_probability', ascending=False).head(k)
-
-    spotlight_df = pd.concat([in_limburg_df, sme_df])
-    spotlight_df = spotlight_df[~spotlight_df.index.duplicated(keep='first')]
-    st.subheader(f"🔥Spotlight")
-    st.dataframe(spotlight_df)
-
-    # -------------------------
-    # 🔝 Top Keywords from Filtered Articles
-    # -------------------------
-    st.subheader("🔝 Top Keywords (Filtered Selection)")
-
-    def extract_keywords(df):
-        all_keywords = []
-        for _, row in df.iterrows():
-            kw_list = row.get("keywords", [])
-            if isinstance(kw_list, list):
-                for kw in kw_list:
-                    if isinstance(kw, dict) and "word" in kw and "score" in kw:
-                        all_keywords.append(kw)
-        return all_keywords
-
-    keywords = extract_keywords(filtered_df)
-
-    if keywords:
-        kw_df = pd.DataFrame(keywords)
-        top_keywords = (
-            kw_df.groupby("word", as_index=False)["score"]
-            .sum()
-            .sort_values("score", ascending=False)
-            .head(20)
-        )
-
-        st.bar_chart(
-            data=top_keywords.set_index("word")["score"],
-            use_container_width=True
-        )
-
-        st.dataframe(top_keywords, use_container_width=True)
-        st.caption("Keywords aggregated across all articles after filtering.")
-    else:
-        st.info("No keywords found for the filtered selection.")
-
-
-
-
     # -------------------------
     # 🧾 Show raw JSON
     # -------------------------
-    # with st.expander("Show raw JSON data"):
-    #     st.json(data)
+    with st.expander("Show raw JSON data"):
+        st.json(data)
 
 except FileNotFoundError:
-    st.error(f"❌ File not found at path: `{FILE_PATH}`")
+    st.error(f"File not found at path: `{FILE_PATH}`")
 except json.JSONDecodeError:
-    st.error("⚠️ The file is not valid JSON.")
+    st.error("The file is not valid JSON.")
 except Exception as e:
     st.error(f"Unexpected error: {e}")
 
