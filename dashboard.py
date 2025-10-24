@@ -6,6 +6,32 @@ import re
 from streamlit_folium import st_folium
 import folium
 
+
+@st.cache_data
+def limburg_box():
+    geo_df = pd.read_csv(
+        "geoNames\\NL.txt", 
+        sep="\t", 
+        header=None,
+        dtype={4: float, 5: float},  # lat/lon columns
+        names=[
+            "geonameid","name","ascii_name","alternate_names",
+            "latitude","longitude","feature_class","feature_code","country_code",
+            "cc2","admin1_code","admin2_code","admin3_code","admin4_code",
+            "population","elevation","dem","timezone","modification_date"
+            ]
+        )
+    
+    geo_df = geo_df[["name", "latitude", "longitude", "admin1_code"]]
+    geo_in_box = geo_df[geo_df["admin1_code"] == 5]
+
+
+
+    locations_in_box = set(geo_in_box['name'].str.lower())
+    return locations_in_box
+limburg = limburg_box()
+
+
 # -------------------------
 # 🔧 Hard-coded JSON file path
 # -------------------------
@@ -139,6 +165,32 @@ try:
         st.caption("Keywords aggregated across all articles after filtering.")
     else:
         st.info("No keywords found for the filtered selection.")
+
+
+    # -----------------------------------------
+    # ARTICLE SPOTLIGHT
+    # -----------------------------------------
+
+    # heuristic 1: in Limburg
+    
+    in_limburg_df = filtered_df[
+        filtered_df['locations'].apply(
+            lambda tags: any(tag.lower() in limburg for tag in tags)
+        )
+    ].copy()
+
+    # heuristic 2: compare to top keywords
+    #???
+
+    # heuristic 3: sme probabilty > 0.9 or head k?
+    k = 5
+    sme_df = filtered_df.sort_values(by='sme_probability', ascending=False).head(k)
+
+    spotlight_df = pd.concat([in_limburg_df, sme_df])
+    spotlight_df = spotlight_df[~spotlight_df.index.duplicated(keep='first')]
+    st.subheader(f"🔥Spotlight")
+    st.dataframe(spotlight_df)
+
 
     # -------------------------
     # 🌍 Map Section — Using Cached Geocoded Data
