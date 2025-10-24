@@ -2,8 +2,7 @@ import streamlit as st
 import pandas as pd
 import json
 import os
-import time
-from geopy.geocoders import Nominatim
+import re
 from streamlit_folium import st_folium
 import folium
 
@@ -71,6 +70,7 @@ try:
                     any(search_tag.lower() in loc.lower() for loc in loc_list)
                     for search_tag in search_tags
                 )
+                if isinstance(loc_list, list) else False
             )
         ]
 
@@ -137,9 +137,73 @@ try:
 
         st.dataframe(top_keywords, use_container_width=True)
         st.caption("Keywords aggregated across all articles after filtering.")
-
     else:
         st.info("No keywords found for the filtered selection.")
+
+    # -------------------------
+    # 🌍 Map Section — Using Cached Geocoded Data
+    # -------------------------
+    st.subheader("🗺️ Interactive Article Map")
+
+    def geocode_locations_with_cache(rows, cache_file="cache/geocode_cache.json"):
+        """Load cached coordinates (no warnings, no API calls)."""
+        os.makedirs(os.path.dirname(cache_file), exist_ok=True)
+
+        # Load cache only
+        if os.path.exists(cache_file):
+            with open(cache_file, "r", encoding="utf-8") as f:
+                cache = json.load(f)
+        else:
+            cache = {}
+
+        geo_records = []
+        loc_to_titles = {}
+
+        # Collect unique locations
+        for _, row in rows.iterrows():
+            locs = row.get("locations", [])
+            if isinstance(locs, list):
+                for loc in locs:
+                    loc_to_titles.setdefault(loc, []).append(row.get("title", "Untitled Article"))
+
+        # Use only cached coordinates
+        for loc, titles in loc_to_titles.items():
+            if loc in cache:
+                geo_data = cache[loc]
+                geo_records.append({
+                    "location": loc,
+                    "lat": geo_data["lat"],
+                    "lon": geo_data["lon"],
+                    "titles": titles
+                })
+            # Skip if not in cache
+            else:
+                continue
+
+        return geo_records
+
+    geo_records = geocode_locations_with_cache(filtered_df)
+
+    # Display the map
+    if geo_records:
+        m = folium.Map(location=[52.1, 5.3], zoom_start=7)
+
+        for record in geo_records:
+            popup_html = "<b>{}</b><br>{}".format(
+                record["location"],
+                "<br>".join([f"• {t}" for t in record["titles"]])
+            )
+            folium.Marker(
+                [record["lat"], record["lon"]],
+                popup=popup_html,
+                tooltip=f"{record['location']} ({len(record['titles'])} article(s))",
+                icon=folium.Icon(color="blue", icon="info-sign"),
+            ).add_to(m)
+
+        st_folium(m, width=1000, height=600)
+        st.write(f"🗺️ Showing {len(geo_records)} unique locations on the map.")
+    else:
+        st.info("No cached geocoded locations found.")
 
     # -------------------------
     # 🧾 Show raw JSON
@@ -153,3 +217,4 @@ except json.JSONDecodeError:
     st.error("⚠️ The file is not valid JSON.")
 except Exception as e:
     st.error(f"Unexpected error: {e}")
+
