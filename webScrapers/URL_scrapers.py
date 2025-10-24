@@ -6,6 +6,16 @@ import time as t
 from dateutil import parser
 import random
 
+
+def clean_text_for_csv(text):
+    if not text:
+        return ""
+    # Replace line breaks and tabs with a space
+    text = text.replace("\n", " ").replace("\r", " ").replace("\t", " ")
+    # Collapse multiple spaces into one
+    text = ' '.join(text.split())
+    return text
+
 # scrape security.nl articles up to and including given date
 def security_nl_historical(date_str):
     articles = []
@@ -54,11 +64,29 @@ def security_nl_historical(date_str):
                 if link.startswith("/"):
                     link = requests.compat.urljoin(url, link)
 
+                    # fetch the article page
+                    try:
+                        response = requests.get(link)
+                        response.raise_for_status()
+                        soup = BeautifulSoup(response.text, "html.parser")
+
+                        # find the posting_content div
+                        content_div = soup.find("div", class_="posting_content")
+                        full_text = ""
+                        if content_div:
+                            paragraphs = content_div.find_all("p")
+                            full_text = "\n".join(p.get_text(strip=True) for p in paragraphs)
+
+                    except Exception as e:
+                        print(f"Failed to fetch article {link}: {e}")
+                        full_text = ""
+
                 articles.append({
                     "date": date_div.get_text(strip=True),
                     "time": timestamp_div.get_text(strip=True) if timestamp_div else "",
                     "title": title,
-                    "link": link
+                    "url": link,
+                    "full_text": clean_text_for_csv(full_text)
                 })
 
         page += 1
@@ -149,19 +177,19 @@ def bleeping_historical(cutoff_date_str):
 def scrape_1yr():
     date = "01-10-2024"
 
-    articles = bleeping_historical(date)
+    # articles = bleeping_historical(date)
 
-    df = pd.DataFrame(articles)
-    df.to_csv(f"articles\\beeping_articles.csv", index=False, encoding="utf-8")
+    # df = pd.DataFrame(articles)
+    # df.to_csv(f"articles\\beeping_articles.csv", index=False, encoding="utf-8")
 
-    print(f"Saved {len(df)} news items to beeping_articles.csv")
+    # print(f"Saved {len(df)} news items to beeping_articles.csv")
 
     articles = security_nl_historical(date)
 
     df = pd.DataFrame(articles)
     df.to_csv("articles\\security_nl_articles.csv", index=False, encoding="utf-8")
 
-    print(f"Saved {len(df)} articles to security_nl_articles.csv")
+    print(f"Saved {len(df)} articles to AAAsecurity_nl_articles.csv")
 
 
 # update csvs with newly scraped articles
