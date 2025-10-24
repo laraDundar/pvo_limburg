@@ -31,17 +31,11 @@ def limburg_box():
     return locations_in_box
 limburg = limburg_box()
 
-
-# -------------------------
-# 🔧 Hard-coded JSON file path
-# -------------------------
 FILE_PATH = "keywords\\all_articles_keywords.json"
 st.title("📊 JSON to DataFrame Viewer (with Filters)")
 
 try:
-    # -------------------------
-    # 📂 Load JSON data
-    # -------------------------
+
     with open(FILE_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -51,7 +45,7 @@ try:
     st.write(f"Rows: {len(df)}, Columns: {len(df.columns)}")
 
     # -------------------------
-    # 🔍 Sidebar Filtering UI
+    # Filtering UI
     # -------------------------
     st.sidebar.header("🔎 Filter Options")
 
@@ -81,7 +75,7 @@ try:
         filtered_df = filtered_df[filtered_df["feed"].isin(selected_feeds)]
 
     # -------------------------
-    # 📍 Location filter
+    # Location filter
     # -------------------------
     location_search = st.sidebar.text_input(
         "Filter by locations (type one or more tags, separated by commas)",
@@ -193,7 +187,7 @@ try:
 
 
     # -------------------------
-    # 🌍 Map Section — Using Cached Geocoded Data
+    # Map Section — Using Cached Geocoded Data
     # -------------------------
     st.subheader("🗺️ Interactive Article Map")
 
@@ -257,16 +251,13 @@ try:
     else:
         st.info("No cached geocoded locations found.")
 
-    # -------------------------
-    # 🧾 Show raw JSON
-    # -------------------------
     with st.expander("Show raw JSON data"):
         st.json(data)
 
 except FileNotFoundError:
-    st.error(f"❌ File not found at path: `{FILE_PATH}`")
+    st.error(f"File not found at path: `{FILE_PATH}`")
 except json.JSONDecodeError:
-    st.error("⚠️ The file is not valid JSON.")
+    st.error("The file is not valid JSON.")
 except Exception as e:
     st.error(f"Unexpected error: {e}")
 
