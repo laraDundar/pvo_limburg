@@ -187,7 +187,7 @@ try:
             ).add_to(m)
 
         st_folium(m, width=1000, height=600)
-        st.write(f"{len(df)} Articles")
+        st.write(f"{len(filtered_df)} Articles")
         st.write(f"Showing {len(geo_records)} unique locations on the map")
     else:
         st.info("No cached geocoded locations found.")
