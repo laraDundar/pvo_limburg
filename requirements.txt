@@ -11,4 +11,7 @@ numpy
 scikit-learn
 nltk
 streamlit
+geopy
+folium
 # python -m spacy download nl_core_news_sm
+# pip install streamlit-folium

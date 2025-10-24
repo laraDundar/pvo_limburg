@@ -100,9 +100,113 @@ try:
         ]
 
 
+
     # Display filtered DataFrame
     st.subheader("📈 Filtered DataFrame")
     st.dataframe(filtered_df[cols_to_show])
+
+# -----------------------------------------
+    # 🗺️ Interactive Folium Map (Provinces + Countries)
+    # -----------------------------------------
+    from geopy.geocoders import Nominatim
+    from streamlit_folium import st_folium
+    import folium
+    import time
+
+    st.subheader("🗺️ Interactive Article Map")
+
+    @st.cache_data
+    def geocode_locations_with_articles(rows):
+        """Geocode unique locations and attach related article titles."""
+        geolocator = Nominatim(user_agent="pvo_dashboard")
+        geo_records = []
+        loc_to_titles = {}
+
+        for _, row in rows.iterrows():
+            locs = row.get("locations", [])
+            if isinstance(locs, list):
+                for loc in locs:
+                    loc_to_titles.setdefault(loc, []).append(row.get("title", "Untitled Article"))
+
+        for loc, titles in loc_to_titles.items():
+            try:
+                # Add "Netherlands" for better accuracy
+                location = geolocator.geocode(loc + ", Netherlands", geometry="geojson")
+                if location:
+                    geo_records.append({
+                        "location": loc,
+                        "lat": location.latitude,
+                        "lon": location.longitude,
+                        "titles": titles,
+                        "geojson": location.raw.get("geojson")
+                    })
+                time.sleep(1)  # avoid rate limits
+            except Exception as e:
+                print(f"⚠️ Could not geocode {loc}: {e}")
+                continue
+
+        return geo_records
+
+    if "locations" in filtered_df.columns and filtered_df["locations"].notna().any():
+        geo_records = geocode_locations_with_articles(filtered_df)
+
+        if geo_records:
+            m = folium.Map(location=[52.1, 5.3], zoom_start=7)
+            province_keywords = [
+                "limburg", "noord-brabant", "gelderland", "utrecht", "zuid-holland",
+                "noord-holland", "overijssel", "drenthe", "friesland", "groningen", "flevoland"
+            ]
+
+            for record in geo_records:
+                loc_lower = record["location"].lower()
+                titles_html = "<br>".join([f"• {t}" for t in record["titles"]])
+                popup_html = f"<b>{record['location']}</b><br>{titles_html}"
+
+                # 🔹 Highlight entire province if name matches
+                if any(prov in loc_lower for prov in province_keywords) and record.get("geojson"):
+                    folium.GeoJson(
+                        record["geojson"],
+                        name=record["location"],
+                        tooltip=f"{record['location']} ({len(record['titles'])} article(s))",
+                        popup=popup_html,
+                        style_function=lambda x: {
+                            "fillColor": "#b3d9ff",
+                            "color": "#1f78b4",
+                            "weight": 2,
+                            "fillOpacity": 0.35,
+                        },
+                    ).add_to(m)
+
+                # 🔹 Highlight entire country if broad (e.g., "Netherlands", "Belgium", "Germany")
+                elif record.get("geojson") and loc_lower in ["nederland", "netherlands", "belgie", "belgium", "duitsland", "germany"]:
+                    folium.GeoJson(
+                        record["geojson"],
+                        name=record["location"],
+                        tooltip=f"{record['location']} ({len(record['titles'])} article(s))",
+                        popup=popup_html,
+                        style_function=lambda x: {
+                            "fillColor": "#ccffcc",
+                            "color": "#33a02c",
+                            "weight": 1,
+                            "fillOpacity": 0.3,
+                        },
+                    ).add_to(m)
+
+                # 🔹 Default marker for cities / towns
+                else:
+                    folium.Marker(
+                        [record["lat"], record["lon"]],
+                        popup=popup_html,
+                        tooltip=f"{record['location']} ({len(record['titles'])} article(s))",
+                        icon=folium.Icon(color="blue", icon="info-sign"),
+                    ).add_to(m)
+
+            st_folium(m, width=1000, height=600)
+            st.write(f"🗺️ Showing {len(geo_records)} unique locations on the map.")
+        else:
+            st.info("No valid locations could be geocoded.")
+    else:
+        st.info("No location data found in this dataset.")
 
     # Expand raw JSON
     with st.expander("Show raw JSON data"):
