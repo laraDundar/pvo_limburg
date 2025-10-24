@@ -7,3 +7,4 @@
 # If you scrape more website add the .json file in the scrapedArticles folder, and run the merge_jsons.py to have one json file with all articles in it the it will be ready for pre_process.py to use.
 # to run dashboard:
 >> streamlit run dashboard.py
+# python -m streamlit run dashboard.py --> This is only for me bc my laptop has mental problems...
