@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 import json
 import os
-import re
 from streamlit_folium import st_folium
 import folium
 
-# get all geonNames in limburg
+
 @st.cache_data
 def limburg_box():
     geo_df = pd.read_csv(
@@ -31,36 +30,30 @@ def limburg_box():
     return locations_in_box
 limburg = limburg_box()
 
-
-# -------------------------
-# 🔧 Hard-coded JSON file path
-# -------------------------
 FILE_PATH = "keywords\\all_articles_keywords.json"
-st.title("📊 Dashboard Prototype 1")
+st.title("📊 JSON to DataFrame Viewer (with Filters)")
 
 try:
-    # -------------------------
-    # 📂 Load JSON data
-    # -------------------------
+
     with open(FILE_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     df = pd.json_normalize(data)
 
-    # st.subheader(f"Data loaded from: `{FILE_PATH}`")
-    # st.write(f"Rows: {len(df)}, Columns: {len(df.columns)}")
+    st.subheader(f"Data loaded from: `{FILE_PATH}`")
+    st.write(f"Rows: {len(df)}, Columns: {len(df.columns)}")
 
     # -------------------------
-    # 🔍 Sidebar Filtering UI
+    # Filtering UI
     # -------------------------
     st.sidebar.header("🔎 Filter Options")
 
     # Column selector
-    # cols_to_show = st.sidebar.multiselect(
-    #     "Select columns to display",
-    #     options=df.columns.tolist(),
-    #     default=df.columns.tolist()
-    # )
+    cols_to_show = st.sidebar.multiselect(
+        "Select columns to display",
+        options=df.columns.tolist(),
+        default=df.columns.tolist()
+    )
 
     # Text search filter
     text_filter = st.sidebar.text_input("Search text (applies to all string columns)")
@@ -81,7 +74,7 @@ try:
         filtered_df = filtered_df[filtered_df["feed"].isin(selected_feeds)]
 
     # -------------------------
-    # 📍 Location filter
+    # Location filter
     # -------------------------
     location_search = st.sidebar.text_input(
         "Filter by locations (type one or more tags, separated by commas)",
@@ -101,7 +94,7 @@ try:
         ]
 
     # -------------------------
-    # Date filter
+    # 📅 Date filter
     # -------------------------
     date_col = "published"
     if date_col in filtered_df.columns:
@@ -125,7 +118,7 @@ try:
             ]
 
     # -------------------------
-    # Display filtered DataFrame
+    # 📈 Display filtered DataFrame
     # -------------------------
     st.subheader("📈 Filtered DataFrame")
     st.dataframe(filtered_df[cols_to_show])
@@ -193,7 +186,7 @@ try:
 
 
     # -------------------------
-    # 🌍 Map Section — Using Cached Geocoded Data
+    # Map Section — Using Cached Geocoded Data
     # -------------------------
     st.subheader("🗺️ Interactive Article Map")
 
@@ -257,16 +250,12 @@ try:
     else:
         st.info("No cached geocoded locations found.")
 
-    # -------------------------
-    # 🧾 Show raw JSON
-    # -------------------------
     with st.expander("Show raw JSON data"):
         st.json(data)
 
 except FileNotFoundError:
-    st.error(f"❌ File not found at path: `{FILE_PATH}`")
+    st.error(f"File not found at path: `{FILE_PATH}`")
 except json.JSONDecodeError:
-    st.error("⚠️ The file is not valid JSON.")
+    st.error("The file is not valid JSON.")
 except Exception as e:
     st.error(f"Unexpected error: {e}")
-
