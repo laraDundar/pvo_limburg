@@ -2,11 +2,10 @@ import streamlit as st
 import pandas as pd
 import json
 import os
-import re
 from streamlit_folium import st_folium
 import folium
 
-
+# all geoNames in Limburg
 @st.cache_data
 def limburg_box():
     geo_df = pd.read_csv(
@@ -31,8 +30,10 @@ def limburg_box():
     return locations_in_box
 limburg = limburg_box()
 
+#--------------------------------
+
 FILE_PATH = "keywords\\all_articles_keywords.json"
-st.title("📊 JSON to DataFrame Viewer (with Filters)")
+st.title("Dashboard Prototype (I)")
 
 try:
 
@@ -41,8 +42,8 @@ try:
 
     df = pd.json_normalize(data)
 
-    st.subheader(f"Data loaded from: `{FILE_PATH}`")
-    st.write(f"Rows: {len(df)}, Columns: {len(df.columns)}")
+    # st.subheader(f"Data loaded from: `{FILE_PATH}`")
+    # st.write(f"{len(df)} Articles")
 
     # -------------------------
     # Filtering UI
@@ -50,11 +51,11 @@ try:
     st.sidebar.header("🔎 Filter Options")
 
     # Column selector
-    cols_to_show = st.sidebar.multiselect(
-        "Select columns to display",
-        options=df.columns.tolist(),
-        default=df.columns.tolist()
-    )
+    # cols_to_show = st.sidebar.multiselect(
+    #     "Select columns to display",
+    #     options=df.columns.tolist(),
+    #     default=df.columns.tolist()
+    # )
 
     # Text search filter
     text_filter = st.sidebar.text_input("Search text (applies to all string columns)")
@@ -95,7 +96,7 @@ try:
         ]
 
     # -------------------------
-    # 📅 Date filter
+    # Date filter
     # -------------------------
     date_col = "published"
     if date_col in filtered_df.columns:
@@ -119,71 +120,10 @@ try:
             ]
 
     # -------------------------
-    # 📈 Display filtered DataFrame
+    # Display filtered DataFrame
     # -------------------------
-    st.subheader("📈 Filtered DataFrame")
-    st.dataframe(filtered_df[cols_to_show])
-
-    # -------------------------
-    # 🔝 Top Keywords from Filtered Articles
-    # -------------------------
-    st.subheader("🔝 Top Keywords (Filtered Selection)")
-
-    def extract_keywords(df):
-        all_keywords = []
-        for _, row in df.iterrows():
-            kw_list = row.get("keywords", [])
-            if isinstance(kw_list, list):
-                for kw in kw_list:
-                    if isinstance(kw, dict) and "word" in kw and "score" in kw:
-                        all_keywords.append(kw)
-        return all_keywords
-
-    keywords = extract_keywords(filtered_df)
-
-    if keywords:
-        kw_df = pd.DataFrame(keywords)
-        top_keywords = (
-            kw_df.groupby("word", as_index=False)["score"]
-            .sum()
-            .sort_values("score", ascending=False)
-            .head(20)
-        )
-
-        st.bar_chart(
-            data=top_keywords.set_index("word")["score"],
-            use_container_width=True
-        )
-
-        st.dataframe(top_keywords, use_container_width=True)
-        st.caption("Keywords aggregated across all articles after filtering.")
-    else:
-        st.info("No keywords found for the filtered selection.")
-
-
-    # -----------------------------------------
-    # ARTICLE SPOTLIGHT
-    # -----------------------------------------
-
-    # heuristic 1: in Limburg
-    
-    in_limburg_df = filtered_df[
-        filtered_df['locations'].apply(
-            lambda tags: any(tag.lower() in limburg for tag in tags)
-        )
-    ].copy()
-
-    # heuristic 2: compare to top keywords
-    #???
-
-    # heuristic 3: sme probabilty > 0.9 or head k?
-    k = 5
-    sme_df = filtered_df.sort_values(by='sme_probability', ascending=False).head(k)
-
-    spotlight_df = pd.concat([in_limburg_df, sme_df])
-    spotlight_df = spotlight_df[~spotlight_df.index.duplicated(keep='first')]
-    st.subheader(f"🔥Spotlight")
-    st.dataframe(spotlight_df)
+    # st.subheader("📈 Filtered DataFrame")
+    # st.dataframe(filtered_df[cols_to_show])
 
 
     # -------------------------
@@ -247,12 +187,76 @@ try:
             ).add_to(m)
 
         st_folium(m, width=1000, height=600)
-        st.write(f"🗺️ Showing {len(geo_records)} unique locations on the map.")
+        st.write(f"{len(filtered_df)} Articles")
+        st.write(f"Showing {len(geo_records)} unique locations on the map")
     else:
         st.info("No cached geocoded locations found.")
+    
+    
+    # -----------------------------------------
+    # ARTICLE SPOTLIGHT
+    # -----------------------------------------
 
-    with st.expander("Show raw JSON data"):
-        st.json(data)
+    # heuristic 1: in Limburg
+    
+    in_limburg_df = filtered_df[
+        filtered_df['locations'].apply(
+            lambda tags: any(tag.lower() in limburg for tag in tags)
+        )
+    ].copy()
+
+    # heuristic 2: compare to top keywords
+    #???
+
+    # heuristic 3: sme probabilty > 0.9 or head k?
+    k = 5
+    sme_df = filtered_df.sort_values(by='sme_probability', ascending=False).head(k)
+
+    spotlight_df = pd.concat([in_limburg_df, sme_df])
+    spotlight_df = spotlight_df[~spotlight_df.index.duplicated(keep='first')]
+    st.subheader(f"🔥Spotlight")
+    st.dataframe(spotlight_df)
+
+
+    # -------------------------
+    # Top Keywords from Filtered Articles
+    # -------------------------
+    st.subheader("🔝 Top Keywords (Filtered Selection)")
+
+    def extract_keywords(df):
+        all_keywords = []
+        for _, row in df.iterrows():
+            kw_list = row.get("keywords", [])
+            if isinstance(kw_list, list):
+                for kw in kw_list:
+                    if isinstance(kw, dict) and "word" in kw and "score" in kw:
+                        all_keywords.append(kw)
+        return all_keywords
+
+    keywords = extract_keywords(filtered_df)
+
+    if keywords:
+        kw_df = pd.DataFrame(keywords)
+        top_keywords = (
+            kw_df.groupby("word", as_index=False)["score"]
+            .sum()
+            .sort_values("score", ascending=False)
+            .head(20)
+        )
+
+        st.bar_chart(
+            data=top_keywords.set_index("word")["score"],
+            use_container_width=True
+        )
+
+        st.dataframe(top_keywords, use_container_width=True)
+        st.caption("Keywords aggregated across all articles after filtering.")
+    else:
+        st.info("No keywords found for the filtered selection.")
+
+
+    # with st.expander("Show raw JSON data"):
+    #     st.json(data)
 
 except FileNotFoundError:
     st.error(f"File not found at path: `{FILE_PATH}`")
@@ -260,4 +264,3 @@ except json.JSONDecodeError:
     st.error("The file is not valid JSON.")
 except Exception as e:
     st.error(f"Unexpected error: {e}")
-
