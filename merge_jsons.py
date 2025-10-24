@@ -1,6 +1,8 @@
 import os
 import json
 import glob
+import pandas as pd
+from datetime import datetime
 
 # -------- CONFIGURATION --------
 INPUT_DIR = "scrapedArticles"       # folder wherescraped JSON files are stored
@@ -15,12 +17,14 @@ def merge_json_files(input_dir: str, output_file: str):
     print(f"🔍 Found {len(json_files)} JSON files in '{input_dir}'")
 
     for file_path in json_files:
+        print (file_path)
         try:
             with open(file_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
                 if isinstance(data, dict):
                     data = [data]
                 elif not isinstance(data, list):
+                    print("Skipped for some reason")
                     continue  # skip malformed entries
 
                 for item in data:
@@ -38,5 +42,26 @@ def merge_json_files(input_dir: str, output_file: str):
 
     print(f"💾 Saved merged file to: {output_file}")
 
+def csv_to_json(csv_file_path, json_file_path):
+    # Read CSV file
+    df = pd.read_csv(csv_file_path)
+
+    # Combine date and time into a datetime object
+    df['published'] = df.apply(
+        lambda row: datetime.strptime(
+            f"{row['date']} {row['time']}", "%d-%m-%Y %H:%M"
+        ).strftime("%a, %d %b %Y %H:%M:%S"),
+        axis=1
+    )
+
+    # Keep only the needed columns, in desired order
+    df = df[['published', 'title', 'url']]
+    
+    # Convert to JSON and save
+    df.to_json(json_file_path, orient='records', indent=4, force_ascii=False)
+    
+    print(f"✅ Successfully converted {csv_file_path} → {json_file_path}")
+
 if __name__ == "__main__":
+    csv_to_json("articles\\security_nl_articles.csv", f"{INPUT_DIR}\\security_nl_articles.json")
     merge_json_files(INPUT_DIR, OUTPUT_FILE)
