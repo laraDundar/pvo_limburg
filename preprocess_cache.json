@@ -47070,5 +47070,40 @@
       }
     ],
     "all_sectors_in_article": []
+  },
+  "15934ef17e58736953b7872c736afdb7": {
+    "feed": "Politie.nl",
+    "title": "Man aangehouden na steekpartij Utrecht",
+    "url": "https://www.politie.nl/nieuws/2026/januari/31/03-man-aangehouden-na-steekpartij-utrecht.html",
+    "published": "Sat, 31 Jan 2026 18:23:00 GMT",
+    "summary": "Agenten van de politie in Utrecht hebben in de nacht van 30 op 31 januari op de Livingstonelaan in Utrecht een man aangehouden. Hij zou kort daarvoor een plaatsgenoot hebben gestoken.",
+    "full_text": "Toen de agenten ter plaatse kwamen, waren de verdachte en het slachtoffer al uiteen. De verdachte, een man uit Utrecht, werd snel gevonden en aangehouden. Het slachtoffer werd ook snel aangetroffen. Hij was aanspreekbaar en is naar het ziekenhuis vervoerd. De politie onderzoekt wat zich in de vroege ochtend van 31 januari nu precies heeft afgespeeld.",
+    "scraped_at": "2026-02-01T05:03:34.409519Z",
+    "id": "9731cbb9d246635cf80ce4899097be2dff9de477c4af4568ef7fbe6fa32a996b",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/januari/31/03-man-aangehouden-na-steekpartij-utrecht.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Toen de agenten ter plaatse kwamen, waren de verdachte en het slachtoffer al uiteen. De verdachte, een man uit Utrecht, werd snel gevonden en aangehouden. Het slachtoffer werd ook snel aangetroffen. Hij was aanspreekbaar en is naar het ziekenhuis vervoerd. De politie onderzoekt wat zich in de vroege ochtend van 31 januari nu precies heeft afgespeeld.",
+    "locations": [
+      "Utrecht"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Utrecht",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6030084814007092,
+    "sector_info": {
+      "sector_code": "86",
+      "sector_name": "Human health activities"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": [
+      "86"
+    ]
   }
 }
