@@ -47105,5 +47105,51 @@
     "all_sectors_in_article": [
       "86"
     ]
+  },
+  "07f5ec8c95ed9b17e4235e6b403b5c15": {
+    "feed": "Politie.nl",
+    "title": "30-jarige fietsendief aangehouden in Heerhugowaard",
+    "url": "https://www.politie.nl/nieuws/2026/februari/2/04-30-jarige-fietsendief-aangehouden-in-heerhugowaard.html",
+    "published": "Mon, 02 Feb 2026 12:50:00 GMT",
+    "summary": "De politie heeft woensdag 27 januari een 30-jarige man uit de gemeente Dijk en Waard aangehouden op verdenking van diefstal van elektrische (bak)fietsen en toebehoren. De politie verdenkt de verdachte ervan verantwoordelijk te zijn geweest voor de diefstal van vele fietsen gedurende een langere periode. De verdachte zit vast en zijn rol is verder in onderzoek.",
+    "full_text": "Uit onderzoek van de recherche in Heerhugowaard bleek dat de verdachte de fietsen onder andere opsloeg in een garage in Heerhugowaard. De fietsen zijn in beslag genomen. Een deel van de gestolen fietsen is teruggegeven aan de rechtmatige eigenaren. De politie zet het onderzoek voort. De verdachte is inmiddels voorgeleid aan de rechter-commissaris en die besloot dat de verdachte nog twee weken langer vast moet blijven zitten. Voorkom fietsendiefstal De eenvoudigste manier om het risico op fietsendiefstal sterk te verkleinen is om de fiets goed op slot te zetten. Doe dit het liefst met twee sloten. In de praktijk staan veel fietsen niet goed op slot en zijn dus kwetsbaar voor diefstal. Probeer zoveel mogelijk uw fiets te stallen in een bewaakte fietsenstalling. Lukt dit niet? Zet de fiets dan in het zicht en ’s avonds het liefst in het licht van een lantaarnpaal. Als de fiets in de schuur of in de garage wordt gezet, gebruik ook dan de sloten. Als de fiets een los scherm/fietscomputer heeft, neem die dan mee naar binnen, net als de sleutel van de accu. Als de fiets over een framenummer beschikt, noteer deze dan altijd. Dit nummer is uniek voor de fiets en helpt bij een eventuele aangifte. Ook voor de verzekering is dit vaak verplicht. Dit nummer staat meestal op het eigendomsbewijs dat de eigenaar van de fietsenhandelaar krijgt. Aangifte fietsendiefstal Is uw fiets, bakfiets of display gestolen, doe dan altijd aangifte. Geef in de aangifte zoveel mogelijk informatie door, bijvoorbeeld merk, framenummer, type kleur of andere opvallende kenmerken, dit maakt het retourneren aan de rechtmatige eigenaar makkelijker. Er worden namelijk steeds vaker fietsen opgespoord die zijn geregistreerd in het fietsdiefstalregister. Maak melding bij een verdachte situatie Mocht u een verdachte situatie als fietsendiefstal constateren, bel dan direct 112. Het bellen van 112 is bedoeld voor spoed. Dus niet alleen voor levensbedreigende situaties, maar zeker ook wanneer men getuige is van een misdrijf of het voorbereiden van een inbraak of diefstal.",
+    "scraped_at": "2026-02-03T04:48:54.826800Z",
+    "id": "3289332dd6e65a978205b8db214c3df5d75ef8e6ed3ad156b5534b271bbf142b",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/2/04-30-jarige-fietsendief-aangehouden-in-heerhugowaard.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Uit onderzoek van de recherche in Heerhugowaard bleek dat de verdachte de fietsen onder andere opsloeg in een garage in Heerhugowaard. De fietsen zijn in beslag genomen. Een deel van de gestolen fietsen is teruggegeven aan de rechtmatige eigenaren. De politie zet het onderzoek voort. De verdachte is inmiddels voorgeleid aan de rechter-commissaris en die besloot dat de verdachte nog twee weken langer vast moet blijven zitten. Voorkom fietsendiefstal De eenvoudigste manier om het risico op fietsendiefstal sterk te verkleinen is om de fiets goed op slot te zetten. Doe dit het liefst met twee sloten. In de praktijk staan veel fietsen niet goed op slot en zijn dus kwetsbaar voor diefstal. Probeer zoveel mogelijk uw fiets te stallen in een bewaakte fietsenstalling. Lukt dit niet? Zet de fiets dan in het zicht en ’s avonds het liefst in het licht van een lantaarnpaal. Als de fiets in de schuur of in de garage wordt gezet, gebruik ook dan de sloten. Als de fiets een los scherm/fietscomputer heeft, neem die dan mee naar binnen, net als de sleutel van de accu. Als de fiets over een framenummer beschikt, noteer deze dan altijd. Dit nummer is uniek voor de fiets en helpt bij een eventuele aangifte. Ook voor de verzekering is dit vaak verplicht. Dit nummer staat meestal op het eigendomsbewijs dat de eigenaar van de fietsenhandelaar krijgt. Aangifte fietsendiefstal Is uw fiets, bakfiets of display gestolen, doe dan altijd aangifte. Geef in de aangifte zoveel mogelijk informatie door, bijvoorbeeld merk, framenummer, type kleur of andere opvallende kenmerken, dit maakt het retourneren aan de rechtmatige eigenaar makkelijker. Er worden namelijk steeds vaker fietsen opgespoord die zijn geregistreerd in het fietsdiefstalregister. Maak melding bij een verdachte situatie Mocht u een verdachte situatie als fietsendiefstal constateren, bel dan direct 112. Het bellen van 112 is bedoeld voor spoed. Dus niet alleen voor levensbedreigende situaties, maar zeker ook wanneer men getuige is van een misdrijf of het voorbereiden van een inbraak of diefstal.",
+    "locations": [
+      "Heerhugowaard"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Heerhugowaard",
+        "NL"
+      ],
+      [
+        "Heerhugowaard",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.729085593901911,
+    "sector_info": {
+      "sector_code": "00",
+      "sector_name": "General business"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "Maak",
+        "sector_code": "00",
+        "sector_name": "General business",
+        "is_victim": true
+      }
+    ],
+    "all_sectors_in_article": [
+      "00"
+    ]
   }
 }
