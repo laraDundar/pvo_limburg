@@ -47151,5 +47151,165 @@
     "all_sectors_in_article": [
       "00"
     ]
+  },
+  "df9cea798ea6482c06a062523aff3fbf": {
+    "feed": "Politie.nl",
+    "title": "Kapitein schip afkomstig uit Rusland aangehouden voor valsheid in geschrifte",
+    "url": "https://www.politie.nl/nieuws/2026/februari/3/12-kapitein-schip-afkomstig-uit-rusland-aangehouden-voor-valsheid-in-geschrifte.html",
+    "published": "Tue, 03 Feb 2026 14:30:00 GMT",
+    "summary": "Zondag 25 januari 2026 controleerden we een Liberiaans schip dat voor de kust van Scheveningen stillag. Bij de controle bleek dat de kapitein van het schip de officiële scheepsdocumenten had vervalst: in plaats van Rusland, werd Estland als vertrekhaven genoemd. De kapitein werd aangehouden voor valsheid in geschrifte.",
+    "full_text": "Anker verloren Op het Kustwachtcentrum zagen ze afwijkend vaargedrag van een Liberiaanse schip. Het schip lag vervolgens stil in het ankervak voor de kust van Scheveningen. Het boardingteam, bestaande uit de Maritieme Politie, Douane en Kmar, besloot tot een controle vanwege het ongebruikelijke gedrag. Het schip lag in het ankervak om een nieuw anker te monteren, omdat het andere anker onderweg verloren was gegaan. De kapitein verklaarde dat het schip onderweg was vanuit Estland naar Rotterdam. Verificatie in de systemen van de Kustwacht gaf echter een andere haven van vertrek aan, namelijk het Russische Kaliningrad. Het Team Maritieme Politie van de Landelijke Expertise & Operaties (LX) stelde daarop een onderzoek in. Onderzoek naar documenten en lading Het onderzoek duurde meerdere dagen. Gedurende deze tijd lag het schip stil. De officiële scheepsdocumenten werden gecontroleerd: ook hierin stond Estland genoemd stond als vertrekhaven. Volgens de documenten was het schip geladen met ‘soyabean oil’. De douane doorzocht het schip grondig en nam monsters van de lading. In opdracht van de officier van justitie werd de kapitein aangehouden als verdachte voor het plegen van valsheid in geschrifte. Tijdens zijn verhoor gaf de man toe dat hij inderdaad had gelogen over de vertrekhaven. Hij hoopte op die manier onder eventuele Europese sanctiemaatregelen tegen Rusland uit te komen. De kapitein van het Liberiaanse schip bleek een lading opgehaald te hebben in Rusland met het doel dit naar een ander land (buiten Europa) te verschepen. Tijdens deze lange reis moest het schip tussentijds tanken in Rotterdam. Uit de monsters bleek dat het schip inderdaad geladen was met sojaolie, dus niet met gesanctioneerde goederen. De kapitein is na het onderzoek na twee nachten in de cel vrijgelaten. De man kreeg een boete van €4000,- voor valsheid in geschrifte. Scherp op vaarbewegingen Eind 2025 legde de Europese Unie nieuwe sancties op tegen Rusland. Deze sancties richten zich vooral op de Russische schaduwvloot, olietankers waarmee gepoogd wordt de sancties te ontwijken. De Kustwacht is, mede vanwege deze sancties, scherp op vaarbewegingen en andere bijzonderheden op het water.",
+    "scraped_at": "2026-02-04T04:30:20.766387Z",
+    "id": "2ccf5e791fb410cf429d0fe4985a5a301d2d986d81970954221292abdf525cd6",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/3/12-kapitein-schip-afkomstig-uit-rusland-aangehouden-voor-valsheid-in-geschrifte.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Anker verloren Op het Kustwachtcentrum zagen ze afwijkend vaargedrag van een Liberiaanse schip. Het schip lag vervolgens stil in het ankervak voor de kust van Scheveningen. Het boardingteam, bestaande uit de Maritieme Politie, Douane en Kmar, besloot tot een controle vanwege het ongebruikelijke gedrag. Het schip lag in het ankervak om een nieuw anker te monteren, omdat het andere anker onderweg verloren was gegaan. De kapitein verklaarde dat het schip onderweg was vanuit Estland naar Rotterdam. Verificatie in de systemen van de Kustwacht gaf echter een andere haven van vertrek aan, namelijk het Russische Kaliningrad. Het Team Maritieme Politie van de Landelijke Expertise & Operaties (LX) stelde daarop een onderzoek in. Onderzoek naar documenten en lading Het onderzoek duurde meerdere dagen. Gedurende deze tijd lag het schip stil. De officiële scheepsdocumenten werden gecontroleerd: ook hierin stond Estland genoemd stond als vertrekhaven. Volgens de documenten was het schip geladen met ‘soyabean oil’. De douane doorzocht het schip grondig en nam monsters van de lading. In opdracht van de officier van justitie werd de kapitein aangehouden als verdachte voor het plegen van valsheid in geschrifte. Tijdens zijn verhoor gaf de man toe dat hij inderdaad had gelogen over de vertrekhaven. Hij hoopte op die manier onder eventuele Europese sanctiemaatregelen tegen Rusland uit te komen. De kapitein van het Liberiaanse schip bleek een lading opgehaald te hebben in Rusland met het doel dit naar een ander land (buiten Europa) te verschepen. Tijdens deze lange reis moest het schip tussentijds tanken in Rotterdam. Uit de monsters bleek dat het schip inderdaad geladen was met sojaolie, dus niet met gesanctioneerde goederen. De kapitein is na het onderzoek na twee nachten in de cel vrijgelaten. De man kreeg een boete van €4000,- voor valsheid in geschrifte. Scherp op vaarbewegingen Eind 2025 legde de Europese Unie nieuwe sancties op tegen Rusland. Deze sancties richten zich vooral op de Russische schaduwvloot, olietankers waarmee gepoogd wordt de sancties te ontwijken. De Kustwacht is, mede vanwege deze sancties, scherp op vaarbewegingen en andere bijzonderheden op het water.",
+    "locations": [
+      "Rusland"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Rotterdam",
+        "NL"
+      ],
+      [
+        "Rotterdam",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6304617553614768,
+    "sme_probability": 0.6030084814007092,
+    "sector_info": {
+      "sector_code": "not_affected",
+      "sector_name": "Not affected by incident"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "Maritieme Politie",
+        "sector_code": "not_affected",
+        "sector_name": "Not affected by incident",
+        "is_victim": false
+      },
+      {
+        "company_name": "Team Maritieme Politie van de Landelijke Expertise",
+        "sector_code": "not_affected",
+        "sector_name": "Not affected by incident",
+        "is_victim": false
+      }
+    ],
+    "all_sectors_in_article": [
+      "not_affected"
+    ]
+  },
+  "22db9ea8876a3bc7e7833e2bcb1dd9da": {
+    "feed": "Politie.nl",
+    "title": "Softdrugs en vapes in beslag genomen na MMA-melding",
+    "url": "https://www.politie.nl/nieuws/2026/februari/3/08-softdrugs-en-vapes-in-beslag-genomen-na-mma-melding.html",
+    "published": "Tue, 03 Feb 2026 12:42:00 GMT",
+    "summary": "Naar aanleiding van een melding via Meld Misdaad Anoniem vielen politieagenten maandagavond rond 20.20 uur een woning aan de Desselaar in Oosterhout binnen.",
+    "full_text": "Via MMA kunnen mensen zaken melden die strafbaar zijn. Meld Misdaad Anoniem speelt die (gegarandeerd anonieme) meldingen door naar de politie die een onderzoek gaat doen om de informatie te verduidelijken. Op deze manier hoeven burgers niet per se in contact te treden met de politie als ze dat niet willen, maar kunnen ze toch verdachte situaties melden. De gegevens van de melder blijven geheim. Goederen in beslag genomen Zo acteerde de politie maandagavond op een MMA-melding. In een woning aan de Desselaar in Oosterhout werd een huiszoeking gedaan. Bij die huiszoeking, onder leiding van een rechter-commissaris, werd onder meer een hoeveelheid hennep aangetroffen en meer dan 100 vapes. Zowel de softdrugs als de vapes zijn door de politie in beslag genomen. De bewoners van de woning wordt op een later moment door de politie gehoord. Ze zijn niet aangehouden. Melden helpt! Wilt u ook strafbare situaties melden? Dat kan natuurlijk via de politie zelf, het algemene nummer is 0900-8844. Maar het kan ook via Meld Misdaad Anoniem. Deze organisatie is bereikbaar via 0800-7000 en via de website www.meldmisdaadanoniem.nl .",
+    "scraped_at": "2026-02-04T04:30:20.766906Z",
+    "id": "faa656fda9bd5d9c9df4044216780eefc6cad29acd12cb11ae09b70db55d4032",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/3/08-softdrugs-en-vapes-in-beslag-genomen-na-mma-melding.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Via MMA kunnen mensen zaken melden die strafbaar zijn. Meld Misdaad Anoniem speelt die (gegarandeerd anonieme) meldingen door naar de politie die een onderzoek gaat doen om de informatie te verduidelijken. Op deze manier hoeven burgers niet per se in contact te treden met de politie als ze dat niet willen, maar kunnen ze toch verdachte situaties melden. De gegevens van de melder blijven geheim. Goederen in beslag genomen Zo acteerde de politie maandagavond op een MMA-melding. In een woning aan de Desselaar in Oosterhout werd een huiszoeking gedaan. Bij die huiszoeking, onder leiding van een rechter-commissaris, werd onder meer een hoeveelheid hennep aangetroffen en meer dan 100 vapes. Zowel de softdrugs als de vapes zijn door de politie in beslag genomen. De bewoners van de woning wordt op een later moment door de politie gehoord. Ze zijn niet aangehouden. Melden helpt! Wilt u ook strafbare situaties melden? Dat kan natuurlijk via de politie zelf, het algemene nummer is 0900-8844. Maar het kan ook via Meld Misdaad Anoniem. Deze organisatie is bereikbaar via 0800-7000 en via de website www.meldmisdaadanoniem.nl .",
+    "locations": [
+      "Oosterhout"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Oosterhout",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6300548038123391,
+    "sme_probability": 0.6304614602696039,
+    "sector_info": {
+      "sector_code": "56.3",
+      "sector_name": "Beverage serving activities"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "Meld Misdaad Anoniem",
+        "sector_code": "56.3",
+        "sector_name": "Beverage serving activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "Wilt",
+        "sector_code": "not_affected",
+        "sector_name": "Not affected by incident",
+        "is_victim": false
+      },
+      {
+        "company_name": "Meld Misdaad Anoniem",
+        "sector_code": "56.3",
+        "sector_name": "Beverage serving activities",
+        "is_victim": true
+      }
+    ],
+    "all_sectors_in_article": [
+      "not_affected",
+      "56.3"
+    ]
+  },
+  "e807a5c0ac6a8218f9843ee511b40d11": {
+    "feed": "RTV Noord",
+    "title": "112-nieuws dinsdag 3 februari: Botsing op A28 bij Haren • School Veendam ontruimd na gaslucht",
+    "url": "https://www.rtvnoord.nl/112/1376694/112-nieuws-dinsdag-3-februari-botsing-op-a28-bij-haren-school-veendam-ontruimd-na-gaslucht",
+    "published": "Tue, 03 Feb 2026 21:59:05 GMT",
+    "summary": "In dit 112-blog houden we je deze dinsdag op de hoogte van het laatste 112-nieuws. Je vindt hier een overzicht van ongelukken, branden, storingen en misdrijven.",
+    "full_text": "Op meerdere plekken in Groningen zijn nepagenten en mensen die zich voordien als bankmedewerkers actief. De politie heeft maandag meldingen gekregen uit onder meer Veendam, Pekela, Leek en Zuidhorn. Bij tenminste één slachtoffer is iets buitgemaakt door een zogenaamde bankmedewerker. Er is nog niemand aangehouden, zegt een politiewoordvoerder. 'Komt er een persoon aan de deur die waardevolle spullen komt ophalen om ze veilig op te bergen, trap hier dan niet in en bel direct 112', adviseert de politie.",
+    "scraped_at": "2026-02-04T04:31:10.908400Z",
+    "id": "6ee3c9b6f015acb1d933d9cd2579dc7793a4f8292cebf5eeba053e3aea686778",
+    "canonical_url": "https://www.rtvnoord.nl/112/1376694/112-nieuws-dinsdag-3-februari-botsing-op-a28-bij-haren-school-veendam-ontruimd-na-gaslucht",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Op meerdere plekken in Groningen zijn nepagenten en mensen die zich voordien als bankmedewerkers actief. De politie heeft maandag meldingen gekregen uit onder meer Veendam, Pekela, Leek en Zuidhorn. Bij tenminste één slachtoffer is iets buitgemaakt door een zogenaamde bankmedewerker. Er is nog niemand aangehouden, zegt een politiewoordvoerder. 'Komt er een persoon aan de deur die waardevolle spullen komt ophalen om ze veilig op te bergen, trap hier dan niet in en bel direct 112', adviseert de politie.",
+    "locations": [
+      "Groningen",
+      "Veendam",
+      "Pekela",
+      "Leek",
+      "Zuidhorn"
+    ],
+    "country": "NL",
+    "country_score": 0.6,
+    "country_evidence": [
+      [
+        "Groningen",
+        "DE"
+      ],
+      [
+        "Veendam",
+        "NL"
+      ],
+      [
+        "Pekela",
+        "NL"
+      ],
+      [
+        "Leek",
+        "DE"
+      ],
+      [
+        "Zuidhorn",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6030084814007092,
+    "sector_info": {
+      "sector_code": "unknown",
+      "sector_name": "Unclassified"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": []
   }
 }
