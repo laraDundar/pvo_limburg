@@ -47311,5 +47311,124 @@
     },
     "companies_with_sectors": [],
     "all_sectors_in_article": []
+  },
+  "34d84fbc489cdbf16e2e35f97f1a4263": {
+    "feed": "Politie.nl",
+    "title": "Politie waarschuwt afzenders berichten aan Feyenoord-directeur per sms",
+    "url": "https://www.politie.nl/nieuws/2026/februari/4/07-politie-waarschuwt-afzenders-berichten-aan-feyenoord-directeur-per-sms.html",
+    "published": "Wed, 04 Feb 2026 15:58:00 GMT",
+    "summary": "Een grote groep personen ontving woensdagmiddag een sms van de politie om hen op te roepen te stoppen met het versturen van berichten aan Feyenoord-directeur te Kloese. De telefoonnummers van deze personen zijn opgedoken in het onderzoek dat de politie doet naar de telefonische bedreigingen gericht aan de Feyenoord-directeur.",
+    "full_text": "“Jouw 06-nummer komt voor in een politieonderzoek naar bedreiging van de directeur van Feyenoord. Stop hiermee. Deze berichten kunnen strafbaar zijn.” Deze tekst kwam woensdagmiddag bij een grote groep personen op hun telefoon binnen. Uit het politie-onderzoek is gebleken dat vanaf deze telefoons is gebeld of berichten zijn verstuurd aan Feyenoord-directeur te Kloese. Het zijn de eerste telefoonnummers die in het onderzoek naar voren zijn gekomen. Dat onderzoek gaat door, waarbij mogelijk nog nieuwe nummers en daarmee nieuwe personen in beeld kunnen komen. Of de inhoud van de belletjes en/of berichten daadwerkelijk strafbaar is, wordt momenteel per bericht samen met het Openbaar Ministerie bekeken. Indien de berichten strafbaar blijken, zullen politie en Openbaar Ministerie per casus kijken naar passende vervolgstappen. Aanhoudingen worden zeker niet uitgesloten.",
+    "scraped_at": "2026-02-05T04:50:16.845941Z",
+    "id": "b5838fa9a19f5e692ce19a444e71f522a47079df884e6cdd91ee30b311ab24e8",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/4/07-politie-waarschuwt-afzenders-berichten-aan-feyenoord-directeur-per-sms.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "“Jouw 06-nummer komt voor in een politieonderzoek naar bedreiging van de directeur van Feyenoord. Stop hiermee. Deze berichten kunnen strafbaar zijn.” Deze tekst kwam woensdagmiddag bij een grote groep personen op hun telefoon binnen. Uit het politie-onderzoek is gebleken dat vanaf deze telefoons is gebeld of berichten zijn verstuurd aan Feyenoord-directeur te Kloese. Het zijn de eerste telefoonnummers die in het onderzoek naar voren zijn gekomen. Dat onderzoek gaat door, waarbij mogelijk nog nieuwe nummers en daarmee nieuwe personen in beeld kunnen komen. Of de inhoud van de belletjes en/of berichten daadwerkelijk strafbaar is, wordt momenteel per bericht samen met het Openbaar Ministerie bekeken. Indien de berichten strafbaar blijken, zullen politie en Openbaar Ministerie per casus kijken naar passende vervolgstappen. Aanhoudingen worden zeker niet uitgesloten.",
+    "locations": [
+      "blijken"
+    ],
+    "country": "BE",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "blijken",
+        "BE"
+      ]
+    ],
+    "crime_prob": 0.6300548038123391,
+    "sme_probability": 0.6300548038123391,
+    "sector_info": {
+      "sector_code": "62",
+      "sector_name": "Computer programming and consultancy"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "Openbaar Ministerie",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Ministerie per casus kijken naar passende vervolgstappen.",
+        "sector_code": "not_affected",
+        "sector_name": "Not affected by incident",
+        "is_victim": false
+      }
+    ],
+    "all_sectors_in_article": [
+      "62",
+      "not_affected"
+    ]
+  },
+  "3c2dd118e0ff6f2c65210f18689454fd": {
+    "feed": "Politie.nl",
+    "title": "19-jarige Rotterdammer overleden na schietincident",
+    "url": "https://www.politie.nl/nieuws/2026/februari/4/07-19-jarige-rotterdammer-overleden-na-schietincident.html",
+    "published": "Wed, 04 Feb 2026 11:53:00 GMT",
+    "summary": "Gisteravond rond 21.00 uur raakte een 19-jarige Rotterdammer zwaargewond bij een schietincident in een woning aan de Zoutziedersstraat. Hij overleed later in het ziekenhuis. Het is nog onduidelijk wat er precies is gebeurd. De politie is op zoek naar meer informatie.",
+    "full_text": "De politie doet onderzoek naar de zaak. Het is nog onduidelijk of het gaat om een misdrijf, alle scenario’s liggen nog open. Uit voorzorg zijn daarom gisteravond twee mannen die in de woning aanwezig waren (beiden 20 jaar uit Rotterdam) aangehouden, zij zitten nog vast en worden verhoord door de recherche. Heeft u informatie die dit onderzoek kan helpen? Neem dan contact met ons via één van de onderstaande mogelijkheden.",
+    "scraped_at": "2026-02-05T04:50:16.846626Z",
+    "id": "5504447f7dc6e8be7d89c0ca3c03db355e2ac3542986ec8c9ec3adf46d05653c",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/4/07-19-jarige-rotterdammer-overleden-na-schietincident.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "De politie doet onderzoek naar de zaak. Het is nog onduidelijk of het gaat om een misdrijf, alle scenario’s liggen nog open. Uit voorzorg zijn daarom gisteravond twee mannen die in de woning aanwezig waren (beiden 20 jaar uit Rotterdam) aangehouden, zij zitten nog vast en worden verhoord door de recherche. Heeft u informatie die dit onderzoek kan helpen? Neem dan contact met ons via één van de onderstaande mogelijkheden.",
+    "locations": [
+      "Rotterdam"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Rotterdam",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6304617553614768,
+    "sector_info": {
+      "sector_code": "00",
+      "sector_name": "General business"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": [
+      "00"
+    ]
+  },
+  "0630a4541e640bbc92607b8d0a8234e2": {
+    "feed": "Politie.nl",
+    "title": "Politie zoekt getuigen mishandeling Plein",
+    "url": "https://www.politie.nl/nieuws/2026/februari/3/06-politie-zoekt-getuigen-mishandeling-plein.html",
+    "published": "Wed, 04 Feb 2026 11:29:00 GMT",
+    "summary": "In een horecagelegenheid is afgelopen zaterdag 31 januari rond 03:00 uur een 50-jarige man mishandeld. De verdachte is aangehouden en de politie is direct een onderzoek gestart en komt graag in contact met getuigen.",
+    "full_text": "Rond 03:00 bevond het slachtoffer zich in een horecagelegenheid op het Plein. Hier is hij mishandeld door de verdachte. Vanwege zijn verwondingen moest het slachtoffer vervoerd worden naar het ziekenhuis. Getuigen gezocht Het is nog onbekend wat er zich voorafgaand aan de mishandeling heeft afgespeeld. Daarom komt de politie graag in contact met getuigen. Was u getuige of beschikt u over camerabeelden van de mishandeling in de horecagelegenheid? Neem dan contact op met de politie via 0900-8844. Liever anoniem, bel dan met M. 0800-7000. U kunt uw camerabeelden ook uploaden via het tipformulier.",
+    "scraped_at": "2026-02-05T04:50:16.846912Z",
+    "id": "ad5277414a40d62efb7ae3c7408303b120ce07bb16cb1528d624ca6a50632c50",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/3/06-politie-zoekt-getuigen-mishandeling-plein.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Rond 03:00 bevond het slachtoffer zich in een horecagelegenheid op het Plein. Hier is hij mishandeld door de verdachte. Vanwege zijn verwondingen moest het slachtoffer vervoerd worden naar het ziekenhuis. Getuigen gezocht Het is nog onbekend wat er zich voorafgaand aan de mishandeling heeft afgespeeld. Daarom komt de politie graag in contact met getuigen. Was u getuige of beschikt u over camerabeelden van de mishandeling in de horecagelegenheid? Neem dan contact op met de politie via 0900-8844. Liever anoniem, bel dan met M. 0800-7000. U kunt uw camerabeelden ook uploaden via het tipformulier.",
+    "locations": [
+      "Plein"
+    ],
+    "country": "DE",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Plein",
+        "DE"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6300548038123391,
+    "sector_info": {
+      "sector_code": "86",
+      "sector_name": "Human health activities"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": [
+      "86"
+    ]
   }
 }
