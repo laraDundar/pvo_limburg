@@ -47811,5 +47811,206 @@
     "all_sectors_in_article": [
       "56.3"
     ]
+  },
+  "7955bd20b17f071f74119ad3657ef1d7": {
+    "feed": "Politie.nl",
+    "title": "Politie haalt social media-accounts offline na doxing",
+    "url": "https://www.politie.nl/nieuws/2026/februari/6/06-politie-haalt-social-media-accounts-offline-na-doxing.html",
+    "published": "Fri, 06 Feb 2026 15:03:00 GMT",
+    "summary": "De politie heeft een aantal accounts op sociale media offline gehaald nadat er op de accounts op grote schaal persoonsgegevens van mensen binnen de Iraanse gemeenschap werden gedeeld. Er is nog niemand aangehouden.",
+    "full_text": "Recentelijk heeft de politie-eenheid Den Haag meerdere aangiftes binnengekregen van doxing: het online delen van persoonsgegevens, vermoedelijk met kwade bedoelingen. Hierop is de politie een onderzoek gestart, wat heeft geleid tot het offline halen van meerdere accounts waarop foto’s, namen en andere persoonlijke gegevens van personen vanuit de Iraanse gemeenschap werden gedeeld.  De politie roept op om het delen van persoonlijke informatie te stoppen. Aanhoudingen worden niet uitgesloten. Doxing is strafbaar Doxing is sinds 2024 strafbaar en kan het leven van een slachtoffer en zijn of haar omgeving sterk ontregelen. Online achtergebleven content is heel moeilijk te verwijderen, waardoor slachtoffers lang kunnen worden geïntimideerd. Denk dus goed na over wat je online deelt. Ben jij slachtoffer van doxing of kom je online een vorm van doxing tegen? Meld het bij de politie via 0900-8844.",
+    "scraped_at": "2026-02-07T04:31:00.456954Z",
+    "id": "db73ec43a67b59ce971b7d06514cdcf7e54c571f7c24caeb849611c035268a89",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/6/06-politie-haalt-social-media-accounts-offline-na-doxing.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Recentelijk heeft de politie-eenheid Den Haag meerdere aangiftes binnengekregen van doxing: het online delen van persoonsgegevens, vermoedelijk met kwade bedoelingen. Hierop is de politie een onderzoek gestart, wat heeft geleid tot het offline halen van meerdere accounts waarop foto’s, namen en andere persoonlijke gegevens van personen vanuit de Iraanse gemeenschap werden gedeeld.  De politie roept op om het delen van persoonlijke informatie te stoppen. Aanhoudingen worden niet uitgesloten. Doxing is strafbaar Doxing is sinds 2024 strafbaar en kan het leven van een slachtoffer en zijn of haar omgeving sterk ontregelen. Online achtergebleven content is heel moeilijk te verwijderen, waardoor slachtoffers lang kunnen worden geïntimideerd. Denk dus goed na over wat je online deelt. Ben jij slachtoffer van doxing of kom je online een vorm van doxing tegen? Meld het bij de politie via 0900-8844.",
+    "locations": [
+      "Den Haag"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Den Haag",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6030084814007092,
+    "sector_info": {
+      "sector_code": "62",
+      "sector_name": "Computer programming and consultancy"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "Doxing",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      }
+    ],
+    "all_sectors_in_article": [
+      "62"
+    ]
+  },
+  "54dfba1826706c395c7d15827fc35b8c": {
+    "feed": "Politie.nl",
+    "title": "68-jarige man overleden na verkeersongeval in Hoorn",
+    "url": "https://www.politie.nl/nieuws/2026/februari/6/04-68-jarige-man-overleden-na-verkeersongeval-in-hoorn.html",
+    "published": "Fri, 06 Feb 2026 13:33:00 GMT",
+    "summary": "Op de kruising IJsselweg/Dinkelweg in Hoorn vond op donderdag 5 februari rond 15.45 uur een ongeval plaats. De bestuurder, een 68-jarige man uit Hoorn, is voor het ongeval onwel geworden. De man is, ondanks pogingen hem te reanimeren, helaas overleden. De bijrijder is bij het ongeval gewond geraakt en met letsel naar het ziekenhuis gebracht.",
+    "full_text": "Na het ongeval werd de bestuurder door omstanders gereanimeerd, maar dit mocht helaas niet meer baten. De nabestaanden krijgen een familieagent toegewezen. Slachtofferhulp De politie dankt alle omstanders die geholpen hebben bij de reanimatie. Zoiets meemaken is zeer ingrijpend. Dit geldt ook voor ieder die getuigen is geweest van het verkeersongeval. Daarom kunt u als omstander of getuige bij Slachtofferhulp terecht voor steun. De ondersteuning die Slachtofferhulp biedt is altijd gratis. Bel 0900-0101 of laat op de website van Slachtofferhulp een bericht achter met verzoek tot contact. U kunt ook contact opnemen met de politie via nummer 0900-8844. Hier kunt u ook uw gegevens achterlaten, waarna slachtofferhulp Nederland contact met u zal opnemen.",
+    "scraped_at": "2026-02-07T04:31:00.457462Z",
+    "id": "b8df4391c9469aea0bf2507c805b34a8a9b59e35fab6ac64db5727f60b60c797",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/6/04-68-jarige-man-overleden-na-verkeersongeval-in-hoorn.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Na het ongeval werd de bestuurder door omstanders gereanimeerd, maar dit mocht helaas niet meer baten. De nabestaanden krijgen een familieagent toegewezen. Slachtofferhulp De politie dankt alle omstanders die geholpen hebben bij de reanimatie. Zoiets meemaken is zeer ingrijpend. Dit geldt ook voor ieder die getuigen is geweest van het verkeersongeval. Daarom kunt u als omstander of getuige bij Slachtofferhulp terecht voor steun. De ondersteuning die Slachtofferhulp biedt is altijd gratis. Bel 0900-0101 of laat op de website van Slachtofferhulp een bericht achter met verzoek tot contact. U kunt ook contact opnemen met de politie via nummer 0900-8844. Hier kunt u ook uw gegevens achterlaten, waarna slachtofferhulp Nederland contact met u zal opnemen.",
+    "locations": [
+      "Nederland"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Nederland",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6300548038123391,
+    "sector_info": {
+      "sector_code": "62",
+      "sector_name": "Computer programming and consultancy"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": [
+      "62"
+    ]
+  },
+  "b078acce54e0cc6a44d79227cafd52b2": {
+    "feed": "NOS.nl (Economie)",
+    "title": "DNB: steek extra defensiegeld niet in productie tanks of munitie",
+    "url": "https://nos.nl/l/2601158",
+    "published": "Fri, 6 Feb 2026 10:36:16 +0100",
+    "summary": "<p>De 19 miljard euro die Nederland elk jaar extra aan defensie wil uitgeven, kan beter niet worden gestoken in de productie van traditionele onderdelen voor het leger. Het gaat dan om defensieonderdelen die ongeschikt zijn voor niet-militair gebruik, zoals tanks en munitie.</p>\n        <p>Het kan beter worden gebruikt voor het maken van producten waarin Nederland al een voorsprong heeft op andere landen, zoals chips voor in drones. De achterstand die Nederland met wapenproducties heeft op Europese bondgenoten, zoals Duitsland, Frankrijk en Spanje, is daarvoor te groot.</p>\n        <p>Dat adviseert De Nederlandsche Bank (DNB) naar aanleiding van een onderzoek over het effect van <a href=\"https://nos.nl/artikel/2600274-coalitieakkoord-19-miljard-voor-defensie-forse-bezuinigingen-op-zorg-uitkeringen\">hogere defensie-uitgaven</a> op de Nederlandse economie. Op de korte termijn zullen de miljarden worden gestoken in het snel uitbreiden van de militaire capaciteit, verwacht DNB. Uitbreiding van militair materieel zal dan in het buitenland worden gekocht.</p>\n        <p>Voor de langere termijn vindt DNB het verstandig om te investeren in eigen productie. En dan van onderdelen waar andere Europese landen niet in gespecialiseerd zijn. Economisch zou het bijvoorbeeld goed zijn om geld te steken in het maken van militaire onderdelen die ook buiten het leger gebruikt kunnen worden. \"Denk aan chips die in een drone passen, maar even goed in een telefoon\", schrijft DNB.</p>\n        <h2>Chips, microscopen en zeevaart</h2>\n        <p>Nederland heeft nu een voorsprong op andere landen met bijvoorbeeld halfgeleiders. Chipbedrijven als ASML en ASM International lopen hierin voorop. DNB noemt daarnaast ook specifieke typen microscopen en de zeevaart waar Nederland een voorsprong mee heeft. \"Onze kennis en productiefaciliteiten op deze terreinen kunnen bijdragen aan het optuigen van een krachtige Europese defensie-industrie.\"</p>\n        <p>Bijkomend voordeel is dat Nederland naast de militaire opbouw ook de afhankelijkheid van andere landen kan afbouwen. Het Nijmeegse Nexperia is bijvoorbeeld ook gespecialiseerd in chips, maar laat die uiteindelijk produceren in China. Door een ruzie met het Chinese moederbedrijf is die productie <a href=\"https://nos.nl/artikel/2598084-nexperia-zaak-voor-de-rechter-krijgen-we-meer-duidelijkheid\">in de knel gekomen</a>. Even dreigde de Europese auto-industrie hierdoor zonder chips te komen.</p>\n        <p>Het kabinet moet volgens DNB dan wel snel keuzes maken: \"Voor de defensiesector is het belangrijk dat ze weet dat ze jaren vooruit op de overheid kan rekenen als klant. De defensie-industrie gaat alleen nieuwe producten ontwikkelen, wat jaren kost, als ze voldoende zekerheid heeft op vraag aan het eind van het proces.\"</p>\n        <h2>Inflatie</h2>\n        <p>DNB verwacht overigens niet dat de economie meteen een flinke duw in de rug krijgt door de extra investeringen. In het verleden was dit wel zo, maar nu meldt defensie zich als extra werkgever in een toch al grote vraag naar arbeidskrachten. Dit kan leiden tot hogere lonen, wat weer kan leiden tot hogere prijzen door een toenemende inflatie.</p>\n        <p>\"Om deze redenen verwachten we ook niet dat er op de korte termijn flinke groei volgt uit de hogere defensie-uitgaven\", stelt DNB.</p>",
+    "full_text": "NOS Nieuws • gisteren, 10:36 • Aangepast gisteren, 20:05 De 19 miljard euro die Nederland elk jaar extra aan defensie wil uitgeven, kan beter niet worden gestoken in de productie van traditionele onderdelen voor het leger. Het gaat dan om defensieonderdelen die ongeschikt zijn voor niet-militair gebruik, zoals tanks en munitie. Het kan beter worden gebruikt voor het maken van producten waarin Nederland al een voorsprong heeft op andere landen, zoals chips voor in drones. De achterstand die Nederland met wapenproducties heeft op Europese bondgenoten, zoals Duitsland, Frankrijk en Spanje, is daarvoor te groot. Dat adviseert De Nederlandsche Bank (DNB) naar aanleiding van een onderzoek over het effect van hogere defensie-uitgaven op de Nederlandse economie. Op de korte termijn zullen de miljarden worden gestoken in het snel uitbreiden van de militaire capaciteit, verwacht DNB. Uitbreiding van militair materieel zal dan in het buitenland worden gekocht. Voor de langere termijn vindt DNB het verstandig om te investeren in eigen productie. En dan van onderdelen waar andere Europese landen niet in gespecialiseerd zijn. Economisch zou het bijvoorbeeld goed zijn om geld te steken in het maken van militaire onderdelen die ook buiten het leger gebruikt kunnen worden. \"Denk aan chips die in een drone passen, maar even goed in een telefoon\", schrijft DNB. Chips, microscopen en zeevaart Nederland heeft nu een voorsprong op andere landen met bijvoorbeeld halfgeleiders. Chipbedrijven als ASML en ASM International lopen hierin voorop. DNB noemt daarnaast ook specifieke typen microscopen en de zeevaart waar Nederland een voorsprong mee heeft. \"Onze kennis en productiefaciliteiten op deze terreinen kunnen bijdragen aan het optuigen van een krachtige Europese defensie-industrie.\" Bijkomend voordeel is dat Nederland naast de militaire opbouw ook de afhankelijkheid van andere landen kan afbouwen. Het Nijmeegse Nexperia is bijvoorbeeld ook gespecialiseerd in chips, maar laat die uiteindelijk produceren in China. Door een ruzie met het Chinese moederbedrijf is die productie in de knel gekomen . Even dreigde de Europese auto-industrie hierdoor zonder chips te komen. Het kabinet moet volgens DNB dan wel snel keuzes maken: \"Voor de defensiesector is het belangrijk dat ze weet dat ze jaren vooruit op de overheid kan rekenen als klant. De defensie-industrie gaat alleen nieuwe producten ontwikkelen, wat jaren kost, als ze voldoende zekerheid heeft op vraag aan het eind van het proces.\" Inflatie DNB verwacht overigens niet dat de economie meteen een flinke duw in de rug krijgt door de extra investeringen. In het verleden was dit wel zo, maar nu meldt defensie zich als extra werkgever in een toch al grote vraag naar arbeidskrachten. Dit kan leiden tot hogere lonen, wat weer kan leiden tot hogere prijzen door een toenemende inflatie. \"Om deze redenen verwachten we ook niet dat er op de korte termijn flinke groei volgt uit de hogere defensie-uitgaven\", stelt DNB.",
+    "scraped_at": "2026-02-07T04:30:27.719819Z",
+    "id": "e87ea91c7b7694bc5bad66cea2a10d482583b7685f101807e9114198df878f94",
+    "canonical_url": "https://nos.nl/l/2601158",
+    "published_ts": "2026-02-06T09:36:16Z",
+    "source_type": "rss",
+    "clean_geo": "NOS Nieuws • gisteren, 10:36 • Aangepast gisteren, 20:05 De 19 miljard euro die Nederland elk jaar extra aan defensie wil uitgeven, kan beter niet worden gestoken in de productie van traditionele onderdelen voor het leger. Het gaat dan om defensieonderdelen die ongeschikt zijn voor niet-militair gebruik, zoals tanks en munitie. Het kan beter worden gebruikt voor het maken van producten waarin Nederland al een voorsprong heeft op andere landen, zoals chips voor in drones. De achterstand die Nederland met wapenproducties heeft op Europese bondgenoten, zoals Duitsland, Frankrijk en Spanje, is daarvoor te groot. Dat adviseert De Nederlandsche Bank (DNB) naar aanleiding van een onderzoek over het effect van hogere defensie-uitgaven op de Nederlandse economie. Op de korte termijn zullen de miljarden worden gestoken in het snel uitbreiden van de militaire capaciteit, verwacht DNB. Uitbreiding van militair materieel zal dan in het buitenland worden gekocht. Voor de langere termijn vindt DNB het verstandig om te investeren in eigen productie. En dan van onderdelen waar andere Europese landen niet in gespecialiseerd zijn. Economisch zou het bijvoorbeeld goed zijn om geld te steken in het maken van militaire onderdelen die ook buiten het leger gebruikt kunnen worden. \"Denk aan chips die in een drone passen, maar even goed in een telefoon\", schrijft DNB. Chips, microscopen en zeevaart Nederland heeft nu een voorsprong op andere landen met bijvoorbeeld halfgeleiders. Chipbedrijven als ASML en ASM International lopen hierin voorop. DNB noemt daarnaast ook specifieke typen microscopen en de zeevaart waar Nederland een voorsprong mee heeft. \"Onze kennis en productiefaciliteiten op deze terreinen kunnen bijdragen aan het optuigen van een krachtige Europese defensie-industrie.\" Bijkomend voordeel is dat Nederland naast de militaire opbouw ook de afhankelijkheid van andere landen kan afbouwen. Het Nijmeegse Nexperia is bijvoorbeeld ook gespecialiseerd in chips, maar laat die uiteindelijk produceren in China. Door een ruzie met het Chinese moederbedrijf is die productie in de knel gekomen . Even dreigde de Europese auto-industrie hierdoor zonder chips te komen. Het kabinet moet volgens DNB dan wel snel keuzes maken: \"Voor de defensiesector is het belangrijk dat ze weet dat ze jaren vooruit op de overheid kan rekenen als klant. De defensie-industrie gaat alleen nieuwe producten ontwikkelen, wat jaren kost, als ze voldoende zekerheid heeft op vraag aan het eind van het proces.\" Inflatie DNB verwacht overigens niet dat de economie meteen een flinke duw in de rug krijgt door de extra investeringen. In het verleden was dit wel zo, maar nu meldt defensie zich als extra werkgever in een toch al grote vraag naar arbeidskrachten. Dit kan leiden tot hogere lonen, wat weer kan leiden tot hogere prijzen door een toenemende inflatie. \"Om deze redenen verwachten we ook niet dat er op de korte termijn flinke groei volgt uit de hogere defensie-uitgaven\", stelt DNB.",
+    "locations": [
+      "Nederland"
+    ],
+    "country": "NL",
+    "country_score": 0.75,
+    "country_evidence": [
+      [
+        "Nederland",
+        "NL"
+      ],
+      [
+        "Nederland",
+        "NL"
+      ],
+      [
+        "Nederland",
+        "NL"
+      ],
+      [
+        "Duitsland",
+        "DE"
+      ],
+      [
+        "Frankrijk",
+        "BE"
+      ],
+      [
+        "Nederland",
+        "NL"
+      ],
+      [
+        "Nederland",
+        "NL"
+      ],
+      [
+        "Nederland",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6304617553614768,
+    "sme_probability": 0.6300548038123391,
+    "sector_info": {
+      "sector_code": "96",
+      "sector_name": "Other personal service activities"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "NOS",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "DNB",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "DNB",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "DNB",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "DNB",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "Chips",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "ASM International",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "DNB",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "DNB",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      },
+      {
+        "company_name": "DNB",
+        "sector_code": "96",
+        "sector_name": "Other personal service activities",
+        "is_victim": true
+      }
+    ],
+    "all_sectors_in_article": [
+      "96"
+    ]
   }
 }
