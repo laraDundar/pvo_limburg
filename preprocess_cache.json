@@ -48012,5 +48012,40 @@
     "all_sectors_in_article": [
       "96"
     ]
+  },
+  "0d1b2fff400b1f45ba3bce80e46d4dad": {
+    "feed": "Politie.nl",
+    "title": "Drie fietsendieven op heterdaad betrapt",
+    "url": "https://www.politie.nl/nieuws/2026/februari/9/08-drie-fietsendieven-op-heterdaad-betrapt.html",
+    "published": "Mon, 09 Feb 2026 11:02:00 GMT",
+    "summary": "De politie heeft zondagmiddag drie mannen aangehouden op verdenking van poging tot fietsendiefstal. Dit gebeurde rond 17:30 uur aan de Middellaan in Breda.\r\nDe drie mannen uit Breda zijn aangehouden en overgebracht naar het politiebureau.",
+    "full_text": "Een omstander belde de politie nadat hij zag dat meerdere personen probeerden een fiets te stelen. De verdachten reden daarna weg in een voertuig. Meerdere politieauto’s zochten in de omgeving van de Middellaan naar de verdachten. Kort daarna kwam volgens de omstander het voertuig terug naar de Middellaan. Agenten controleerden de inzittenden. Zij hielden de drie mannen uit Breda aan. De politie doet verder onderzoek naar de zaak.",
+    "scraped_at": "2026-02-10T05:06:54.121213Z",
+    "id": "118608457e129b43b3e84ba6c4189c51bd576bbeb54063ea01bb02bada5de201",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/9/08-drie-fietsendieven-op-heterdaad-betrapt.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Een omstander belde de politie nadat hij zag dat meerdere personen probeerden een fiets te stelen. De verdachten reden daarna weg in een voertuig. Meerdere politieauto’s zochten in de omgeving van de Middellaan naar de verdachten. Kort daarna kwam volgens de omstander het voertuig terug naar de Middellaan. Agenten controleerden de inzittenden. Zij hielden de drie mannen uit Breda aan. De politie doet verder onderzoek naar de zaak.",
+    "locations": [
+      "Breda"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Breda",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6300548038123391,
+    "sector_info": {
+      "sector_code": "00",
+      "sector_name": "General business"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": [
+      "00"
+    ]
   }
 }
