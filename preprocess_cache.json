@@ -48047,5 +48047,103 @@
     "all_sectors_in_article": [
       "00"
     ]
+  },
+  "3cc3584ffa9a9e329aa90201c5c55821": {
+    "feed": "Politie.nl",
+    "title": "Onderzoek naar drugshandel leidt tot drie aanhoudingen",
+    "url": "https://www.politie.nl/nieuws/2026/februari/10/08-onderzoek-naar-drugshandel-leidt-tot-drie-aanhoudingen.html",
+    "published": "Tue, 10 Feb 2026 16:16:00 GMT",
+    "summary": "Op dinsdag 10 februari 2026 vonden meerdere invallen plaats in Tilburg en in Oud-Beijerland. De politie heeft drie verdachten aangehouden op verdenking van drugshandel en witwassen.",
+    "full_text": "Op dinsdagochtend rond 06.00 uur heeft de politie doorzoekingen gedaan in vijf panden in Tilburg en in één pand in Oud-Beijerland. Twee 26-jarige mannen uit Tilburg en een 28-jarige man uit Oud-Beijerland zijn aangehouden en meegenomen naar het politiebureau. Aankomende vrijdag worden ze alle drie voorgeleid voor de Rechter-Commissaris. Omdat de verdachten op dit moment beperkingen opgelegd hebben gekregen kan niet meer informatie gedeeld worden.",
+    "scraped_at": "2026-02-11T05:05:32.782321Z",
+    "id": "40ae8146d3f8f6da4f8097cc4d340a6c1db1e29785241ae7c50b5fea7e533318",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/10/08-onderzoek-naar-drugshandel-leidt-tot-drie-aanhoudingen.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Op dinsdagochtend rond 06.00 uur heeft de politie doorzoekingen gedaan in vijf panden in Tilburg en in één pand in Oud-Beijerland. Twee 26-jarige mannen uit Tilburg en een 28-jarige man uit Oud-Beijerland zijn aangehouden en meegenomen naar het politiebureau. Aankomende vrijdag worden ze alle drie voorgeleid voor de Rechter-Commissaris. Omdat de verdachten op dit moment beperkingen opgelegd hebben gekregen kan niet meer informatie gedeeld worden.",
+    "locations": [
+      "Tilburg",
+      "Oud-Beijerland",
+      "Tilburg",
+      "Oud-Beijerland"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Tilburg",
+        "NL"
+      ],
+      [
+        "Oud-Beijerland",
+        "NL"
+      ],
+      [
+        "Tilburg",
+        "NL"
+      ],
+      [
+        "Oud-Beijerland",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6030084814007092,
+    "sector_info": {
+      "sector_code": "unknown",
+      "sector_name": "Unclassified"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": []
+  },
+  "2573cac0bf29fa8a56fdf3dde7ef8be5": {
+    "feed": "Politie.nl",
+    "title": "Poging tot plaatsen van explosief loopt uit op mishandeling",
+    "url": "https://www.politie.nl/nieuws/2026/februari/9/05-poging-tot-plaatsen-van-explosief-loopt-uit-op-mishandeling.html",
+    "published": "Tue, 10 Feb 2026 08:19:00 GMT",
+    "summary": "Na diverse meldingen van een mishandeling maandagnacht, gaan agenten met spoed naar de Jan van Tooropstraat in Weesp. Daar treffen ze een gewonde man aan. Hij is even daarvoor mishandeld, nadat gezien zou zijn dat hij een explosief wilde neerleggen bij een restaurant. Twee personen, waaronder de gewonde man, zijn aangehouden.",
+    "full_text": "De 20-jarige man uit Amsterdam liep zijn verwondingen op maandag 9 februari even na middernacht op. Door aanwezige personen in het restaurant werd gezien dat hij een explosief bij het desbetreffende pand wilde leggen. Een man van 29 jaar uit Weesp is voor deze mishandeling aangehouden. Ter plaatse vinden agenten een mogelijk explosief voorwerp. Daarom is de gewonde man, nadat hij ter controle in het ziekenhuis is geweest, ook aangehouden voor poging brandstichting met een explosief. De recherche doet op dit moment onderzoek naar wat er precies is gebeurd. De gemeente heeft het restaurant inmiddels gesloten. Ben je die nacht getuige geweest en heb je nog niet met de politie gesproken? Of heb je meer informatie die het onderzoek verder kan helpen? Melden kan telefonisch via 0900-8844 of via onderstaand tipformulier. Liever anoniem? Dat is mogelijk via Meld Misdaad Anoniem op 0800-7000. Het zaaknummer is 2026032806.",
+    "scraped_at": "2026-02-11T05:05:32.786781Z",
+    "id": "7d25dec3551b1b021ac40ffb61b5ad23966bddc628f762905559f1e691d7e162",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/9/05-poging-tot-plaatsen-van-explosief-loopt-uit-op-mishandeling.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "De 20-jarige man uit Amsterdam liep zijn verwondingen op maandag 9 februari even na middernacht op. Door aanwezige personen in het restaurant werd gezien dat hij een explosief bij het desbetreffende pand wilde leggen. Een man van 29 jaar uit Weesp is voor deze mishandeling aangehouden. Ter plaatse vinden agenten een mogelijk explosief voorwerp. Daarom is de gewonde man, nadat hij ter controle in het ziekenhuis is geweest, ook aangehouden voor poging brandstichting met een explosief. De recherche doet op dit moment onderzoek naar wat er precies is gebeurd. De gemeente heeft het restaurant inmiddels gesloten. Ben je die nacht getuige geweest en heb je nog niet met de politie gesproken? Of heb je meer informatie die het onderzoek verder kan helpen? Melden kan telefonisch via 0900-8844 of via onderstaand tipformulier. Liever anoniem? Dat is mogelijk via Meld Misdaad Anoniem op 0800-7000. Het zaaknummer is 2026032806.",
+    "locations": [
+      "Amsterdam"
+    ],
+    "country": "NL",
+    "country_score": 0.6666666666666666,
+    "country_evidence": [
+      [
+        "Amsterdam",
+        "NL"
+      ],
+      [
+        "Weesp",
+        "NL"
+      ],
+      [
+        "Melden",
+        "BE"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6809353327149118,
+    "sector_info": {
+      "sector_code": "00",
+      "sector_name": "General business"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "Meld Misdaad Anoniem",
+        "sector_code": "00",
+        "sector_name": "General business",
+        "is_victim": true
+      }
+    ],
+    "all_sectors_in_article": [
+      "00"
+    ]
   }
 }
