@@ -48286,5 +48286,136 @@
     "all_sectors_in_article": [
       "00"
     ]
+  },
+  "19a8d71c3ea888af4d28164b7a95774a": {
+    "feed": "Politie.nl",
+    "title": "Grote vangst na doorzoeking in woning in gemeente Noordoostpolder",
+    "url": "https://www.politie.nl/nieuws/2026/februari/12/03-grote-vangst-na-doorzoeking-in-woning-in-gemeente-noordoostpolder.html",
+    "published": "Thu, 12 Feb 2026 17:24:00 GMT",
+    "summary": "Op donderdag 5 februari is een woning in de gemeente Noordoostpolder doorzocht in verband met een lopend onderzoek. Dit gebeurde door het ondermijningsteam van de politie. Het onderzoek werd gestart naar aanleiding van een anonieme melding. Er zijn twee personen aangehouden.",
+    "full_text": "In de woning is meer dan zeven kilo softdrugs en zijn verschillende wapens aangetroffen. Ook werd er 13.000 aan cashgeld en werden er vier dozen illegale sigaretten en shag aangetroffen die zijn overgedragen aan de douane. Aanhoudingen Bij de doorzoeking zijn twee personen aangehouden. Het gaat hierbij om een 56-jarige vrouw en een 49-jarige man uit gemeente Noordoostpolder. Meld misdaad anoniem Jij kent je buurt het beste. Denk je dat er misdaad in jouw buurt is? Meld het. M. is het onafhankelijke meldpunt waar je anoniem informatie kunt geven over criminaliteit. Dat kunnen veel verschillende soorten strafbare feiten zijn, bijvoorbeeld de productie van en handel in drugs, geweldsdelicten, overvallen, brandstichting, wapen- of mensenhandel. Maar ook met informatie over fraude en corruptie kun je bij M. terecht. Telefonisch via 0800-7000 of online via meldmisdaadanoniem.nl. Als er spoed is, zoals bij een inbraak of overval. Bel dan 112.",
+    "scraped_at": "2026-02-13T04:55:50.177156Z",
+    "id": "3c3bf814fdc3a4f2e38c2e8242c29a6e2a107f626ec964ec460e65978b3c4151",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/12/03-grote-vangst-na-doorzoeking-in-woning-in-gemeente-noordoostpolder.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "In de woning is meer dan zeven kilo softdrugs en zijn verschillende wapens aangetroffen. Ook werd er 13.000 aan cashgeld en werden er vier dozen illegale sigaretten en shag aangetroffen die zijn overgedragen aan de douane. Aanhoudingen Bij de doorzoeking zijn twee personen aangehouden. Het gaat hierbij om een 56-jarige vrouw en een 49-jarige man uit gemeente Noordoostpolder. Meld misdaad anoniem Jij kent je buurt het beste. Denk je dat er misdaad in jouw buurt is? Meld het. M. is het onafhankelijke meldpunt waar je anoniem informatie kunt geven over criminaliteit. Dat kunnen veel verschillende soorten strafbare feiten zijn, bijvoorbeeld de productie van en handel in drugs, geweldsdelicten, overvallen, brandstichting, wapen- of mensenhandel. Maar ook met informatie over fraude en corruptie kun je bij M. terecht. Telefonisch via 0800-7000 of online via meldmisdaadanoniem.nl. Als er spoed is, zoals bij een inbraak of overval. Bel dan 112.",
+    "locations": [
+      "gemeente Noordoostpolder"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "gemeente Noordoostpolder",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6304615609480185,
+    "sme_probability": 0.6304615852497031,
+    "sector_info": {
+      "sector_code": "62",
+      "sector_name": "Computer programming and consultancy"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": [
+      "62"
+    ]
+  },
+  "024a9fdf1e8015298af6d6a15b046821": {
+    "feed": "NOS.nl (Economie)",
+    "title": "Gestolen data bij Odido zijn 'goud waard voor criminelen'",
+    "url": "https://nos.nl/l/2602162",
+    "published": "Thu, 12 Feb 2026 20:13:59 +0100",
+    "summary": "<p>De <a href=\"https://nos.nl/artikel/2602080-hack-bij-odido-gegevens-miljoenen-klanten-in-handen-van-criminelen\">hack</a> bij telecomprovider Odido, waarbij toegang werd verkregen tot een bestand met gegevens van 6,2 miljoen accounts, is volgens deskundigen een van de grootste datalekken ooit in Nederland.</p>\n        <p>\"Ik kan me niet een bedrijf voor de geest halen waarvan zoveel gegevens zijn gelekt\", zegt ethisch hacker Sijmen Ruwhof.</p>\n        <p>Bij de hack zijn naast standaardpersoonsgegevens ook IBAN-nummers bemachtigd, wat niet vaak voorkomt, zegt Ruwhof.</p>\n        <p>\"Ook hebben ze paspoort- of rijbewijsnummers weten te kopiëren. En die combinatie is best wel uniek; het zijn hele gevoelige persoonsgegevens.\"</p>\n        <p>Het is nog onduidelijk van hoeveel mensen de gegevens daadwerkelijk zijn gestolen. Dat zoekt Odido nu uit. De <a href=\"https://nos.nl/artikel/2602080-hack-bij-odido-gegevens-miljoenen-klanten-in-handen-van-criminelen\">inbraak</a> werd afgelopen weekend ontdekt.</p>\n        <p>In een bericht op zijn website schrijft Odido dat er identificatiegegevens (paspoort- of rijbewijsnummer en geldigheid) zijn buitgemaakt, maar in een mail aan klanten benadrukt Odido dat dit juist niet het geval is.</p>\n        <h2>Wat is er volgens Odido mogelijk gestolen? </h2>\n        <h2>Niet gestolen:</h2>\n        <p>Met de persoonsgegevens kunnen criminelen berichten sturen die er bijzonder echt uitzien, zegt Ruwhof. \"Zoals e-mails of sms'jes waarin zij jouw persoonsgegevens opnemen en zich voordoen als een legitiem bedrijf. Omdat ze echte gegevens over je hebben, ziet zo'n bericht er heel authentiek en geloofwaardig uit.\"</p>\n        <p>Ruwhof waarschuwt dat criminelen hiermee mensen proberen te verleiden om op linkjes te klikken die naar nepwebsites leiden. \"Daar staat bijvoorbeeld een nepinlogscherm dat er heel echt uitziet. Als je daar je wachtwoord invoert, wordt het naar criminelen gestuurd, waardoor zij nog meer toegang tot je leven kunnen krijgen.\"</p>\n        <p>Met de gestolen gegevens kunnen criminelen ook op naam van iemand anders bedrijven bellen. \"Dan moet je vaak een paar vragen beantwoorden, zoals de laatste drie cijfers van je bankrekeningnummer, je postcode en je geboortedatum, om je te authentiseren.\"</p>\n        <p>Dat risico is zeker aanwezig, zegt hij. \"Criminelen kunnen zonder jou te benaderen zich voordoen als jou, contracten afsluiten en andere vormen van fraude plegen.\"</p>\n        <h2>'Goudmijn voor inlichtingendiensten'</h2>\n        <p>Ethisch hacker Matthijs Koot zegt dat criminelen de gestolen informatie kunnen misbruiken om bij hun slachtoffers vertrouwen te wekken. Hij waarschuwt voor een toename van helpdeskfraude, bankfraude en andere vormen van oplichting.</p>\n        <p>Volgens hem is de gestolen informatie ook een goudmijn voor vijandige inlichtingendiensten. \"Die proberen continu hun potentiële doelwitten in kaart te brengen, bijvoorbeeld door telefoonnummers en woonadressen van bekende politici te achterhalen, of door informatie te verzamelen over medewerkers van (rijks)overheidsorganisaties, energiebedrijven en havenbedrijven.\"</p>\n        <h2>Miljoenen</h2>\n        <p>De datadiefstal laat volgens Ruwhof zien dat Odido niet in controle was. \"Zes miljoen gegevens lekken is ontzettend veel. Op het moment dat de data werden gestolen, had de cybersecurity-afdeling al moeten ingrijpen\", zegt hij.</p>\n        <p>\"Zo'n grote hoeveelheid unieke set aan persoonsgegevens is heel veel geld waard. Het is heel goed mogelijk dat de criminelen de gegevens te koop gaan aanbieden\", zegt Ruwhof. Volgens hem is het ook denkbaar dat de hackers Odido afpersen. Odido wil niet zeggen of het onder druk is gezet of wordt gechanteerd door de hackers.</p>\n        <p>Ook voor stalkers en doxxers (die persoonsgegevens delen om iemand te intimideren) kan de gestolen informatie relevant zijn omdat zij met een actueel telefoonnummer, woonadres en/of e-mailadres hun slachtoffers kunnen vinden.</p>\n        <p>Voor drugscriminelen kan het een manier zijn om gegevens te achterhalen van andere criminelen, zegt Koot. \"Criminelen gebruiken niet altijd uitsluitend prepaid-simkaarten; ze kunnen ook voor privé-, familie- of vriendencontact een regulier betaald abonnement gebruiken. \"Een datalek als dit is waarlijk één van de ergste horrorscenario's.\"</p>\n        <h2>Communiceren duurt lang</h2>\n        <p>\"We zijn vanmiddag om 12.00 uur begonnen met het inlichten van onze klanten\", zegt Odido-directeur Tisha van Lammeren tegen de NOS. \"Dat gebeurde vanaf het moment dat duidelijk was op klantniveau welke gegevens zijn gestolen per klant.\" Dat kon niet eerder, zegt ze. \"Je wil geen foutieve informatie delen.\"</p>\n        <p>Volgens Van Lammeren duurt het inlichten van klanten lang omdat het om miljoenen klanten gaat.</p>\n        <p>De directeur gaat niet in op de vraag of de beveiliging op orde was. \"De veiligheid van onze klanten is onze hoofdprioriteit. Dat dit gebeurt geeft aan hoe slinks de cybercriminelen zijn.\"</p>\n        <p>Ook kan of wil Van Lammeren geen uitspraken doen over de vraag of duidelijk is wat de criminelen willen met de gegevens, of er bijvoorbeeld losgeld is geëist.</p>",
+    "full_text": "NOS Nieuws • gisteren, 20:13 De hack bij telecomprovider Odido, waarbij toegang werd verkregen tot een bestand met gegevens van 6,2 miljoen accounts, is volgens deskundigen een van de grootste datalekken ooit in Nederland. \"Ik kan me niet een bedrijf voor de geest halen waarvan zoveel gegevens zijn gelekt\", zegt ethisch hacker Sijmen Ruwhof. Bij de hack zijn naast standaardpersoonsgegevens ook IBAN-nummers bemachtigd, wat niet vaak voorkomt, zegt Ruwhof. \"Ook hebben ze paspoort- of rijbewijsnummers weten te kopiëren. En die combinatie is best wel uniek; het zijn hele gevoelige persoonsgegevens.\" Het is nog onduidelijk van hoeveel mensen de gegevens daadwerkelijk zijn gestolen. Dat zoekt Odido nu uit. De inbraak werd afgelopen weekend ontdekt. In een bericht op zijn website schrijft Odido dat er identificatiegegevens (paspoort- of rijbewijsnummer en geldigheid) zijn buitgemaakt, maar in een mail aan klanten benadrukt Odido dat dit juist niet het geval is. Met de persoonsgegevens kunnen criminelen berichten sturen die er bijzonder echt uitzien, zegt Ruwhof. \"Zoals e-mails of sms'jes waarin zij jouw persoonsgegevens opnemen en zich voordoen als een legitiem bedrijf. Omdat ze echte gegevens over je hebben, ziet zo'n bericht er heel authentiek en geloofwaardig uit.\" Ruwhof waarschuwt dat criminelen hiermee mensen proberen te verleiden om op linkjes te klikken die naar nepwebsites leiden. \"Daar staat bijvoorbeeld een nepinlogscherm dat er heel echt uitziet. Als je daar je wachtwoord invoert, wordt het naar criminelen gestuurd, waardoor zij nog meer toegang tot je leven kunnen krijgen.\" Met de gestolen gegevens kunnen criminelen ook op naam van iemand anders bedrijven bellen. \"Dan moet je vaak een paar vragen beantwoorden, zoals de laatste drie cijfers van je bankrekeningnummer, je postcode en je geboortedatum, om je te authentiseren.\" Dat risico is zeker aanwezig, zegt hij. \"Criminelen kunnen zonder jou te benaderen zich voordoen als jou, contracten afsluiten en andere vormen van fraude plegen.\" 'Goudmijn voor inlichtingendiensten' Ethisch hacker Matthijs Koot zegt dat criminelen de gestolen informatie kunnen misbruiken om bij hun slachtoffers vertrouwen te wekken. Hij waarschuwt voor een toename van helpdeskfraude, bankfraude en andere vormen van oplichting. Volgens hem is de gestolen informatie ook een goudmijn voor vijandige inlichtingendiensten. \"Die proberen continu hun potentiële doelwitten in kaart te brengen, bijvoorbeeld door telefoonnummers en woonadressen van bekende politici te achterhalen, of door informatie te verzamelen over medewerkers van (rijks)overheidsorganisaties, energiebedrijven en havenbedrijven.\" Miljoenen De datadiefstal laat volgens Ruwhof zien dat Odido niet in controle was. \"Zes miljoen gegevens lekken is ontzettend veel. Op het moment dat de data werden gestolen, had de cybersecurity-afdeling al moeten ingrijpen\", zegt hij. \"Zo'n grote hoeveelheid unieke set aan persoonsgegevens is heel veel geld waard. Het is heel goed mogelijk dat de criminelen de gegevens te koop gaan aanbieden\", zegt Ruwhof. Volgens hem is het ook denkbaar dat de hackers Odido afpersen. Odido wil niet zeggen of het onder druk is gezet of wordt gechanteerd door de hackers. Ook voor stalkers en doxxers (die persoonsgegevens delen om iemand te intimideren) kan de gestolen informatie relevant zijn omdat zij met een actueel telefoonnummer, woonadres en/of e-mailadres hun slachtoffers kunnen vinden. Voor drugscriminelen kan het een manier zijn om gegevens te achterhalen van andere criminelen, zegt Koot. \"Criminelen gebruiken niet altijd uitsluitend prepaid-simkaarten; ze kunnen ook voor privé-, familie- of vriendencontact een regulier betaald abonnement gebruiken. \"Een datalek als dit is waarlijk één van de ergste horrorscenario's.\" Communiceren duurt lang \"We zijn vanmiddag om 12.00 uur begonnen met het inlichten van onze klanten\", zegt Odido-directeur Tisha van Lammeren tegen de NOS. \"Dat gebeurde vanaf het moment dat duidelijk was op klantniveau welke gegevens zijn gestolen per klant.\" Dat kon niet eerder, zegt ze. \"Je wil geen foutieve informatie delen.\" Volgens Van Lammeren duurt het inlichten van klanten lang omdat het om miljoenen klanten gaat. De directeur gaat niet in op de vraag of de beveiliging op orde was. \"De veiligheid van onze klanten is onze hoofdprioriteit. Dat dit gebeurt geeft aan hoe slinks de cybercriminelen zijn.\" Ook kan of wil Van Lammeren geen uitspraken doen over de vraag of duidelijk is wat de criminelen willen met de gegevens, of er bijvoorbeeld losgeld is geëist.",
+    "scraped_at": "2026-02-13T04:55:13.056912Z",
+    "id": "58a169b8d02cc9bcbb48c3c588d7d6b14a06a76d514893b4302d272c0228490d",
+    "canonical_url": "https://nos.nl/l/2602162",
+    "published_ts": "2026-02-12T19:13:59Z",
+    "source_type": "rss",
+    "clean_geo": "NOS Nieuws • gisteren, 20:13 De hack bij telecomprovider Odido, waarbij toegang werd verkregen tot een bestand met gegevens van 6,2 miljoen accounts, is volgens deskundigen een van de grootste datalekken ooit in Nederland. \"Ik kan me niet een bedrijf voor de geest halen waarvan zoveel gegevens zijn gelekt\", zegt ethisch hacker Sijmen Ruwhof. Bij de hack zijn naast standaardpersoonsgegevens ook IBAN-nummers bemachtigd, wat niet vaak voorkomt, zegt Ruwhof. \"Ook hebben ze paspoort- of rijbewijsnummers weten te kopiëren. En die combinatie is best wel uniek; het zijn hele gevoelige persoonsgegevens.\" Het is nog onduidelijk van hoeveel mensen de gegevens daadwerkelijk zijn gestolen. Dat zoekt Odido nu uit. De inbraak werd afgelopen weekend ontdekt. In een bericht op zijn website schrijft Odido dat er identificatiegegevens (paspoort- of rijbewijsnummer en geldigheid) zijn buitgemaakt, maar in een mail aan klanten benadrukt Odido dat dit juist niet het geval is. Met de persoonsgegevens kunnen criminelen berichten sturen die er bijzonder echt uitzien, zegt Ruwhof. \"Zoals e-mails of sms'jes waarin zij jouw persoonsgegevens opnemen en zich voordoen als een legitiem bedrijf. Omdat ze echte gegevens over je hebben, ziet zo'n bericht er heel authentiek en geloofwaardig uit.\" Ruwhof waarschuwt dat criminelen hiermee mensen proberen te verleiden om op linkjes te klikken die naar nepwebsites leiden. \"Daar staat bijvoorbeeld een nepinlogscherm dat er heel echt uitziet. Als je daar je wachtwoord invoert, wordt het naar criminelen gestuurd, waardoor zij nog meer toegang tot je leven kunnen krijgen.\" Met de gestolen gegevens kunnen criminelen ook op naam van iemand anders bedrijven bellen. \"Dan moet je vaak een paar vragen beantwoorden, zoals de laatste drie cijfers van je bankrekeningnummer, je postcode en je geboortedatum, om je te authentiseren.\" Dat risico is zeker aanwezig, zegt hij. \"Criminelen kunnen zonder jou te benaderen zich voordoen als jou, contracten afsluiten en andere vormen van fraude plegen.\" 'Goudmijn voor inlichtingendiensten' Ethisch hacker Matthijs Koot zegt dat criminelen de gestolen informatie kunnen misbruiken om bij hun slachtoffers vertrouwen te wekken. Hij waarschuwt voor een toename van helpdeskfraude, bankfraude en andere vormen van oplichting. Volgens hem is de gestolen informatie ook een goudmijn voor vijandige inlichtingendiensten. \"Die proberen continu hun potentiële doelwitten in kaart te brengen, bijvoorbeeld door telefoonnummers en woonadressen van bekende politici te achterhalen, of door informatie te verzamelen over medewerkers van (rijks)overheidsorganisaties, energiebedrijven en havenbedrijven.\" Miljoenen De datadiefstal laat volgens Ruwhof zien dat Odido niet in controle was. \"Zes miljoen gegevens lekken is ontzettend veel. Op het moment dat de data werden gestolen, had de cybersecurity-afdeling al moeten ingrijpen\", zegt hij. \"Zo'n grote hoeveelheid unieke set aan persoonsgegevens is heel veel geld waard. Het is heel goed mogelijk dat de criminelen de gegevens te koop gaan aanbieden\", zegt Ruwhof. Volgens hem is het ook denkbaar dat de hackers Odido afpersen. Odido wil niet zeggen of het onder druk is gezet of wordt gechanteerd door de hackers. Ook voor stalkers en doxxers (die persoonsgegevens delen om iemand te intimideren) kan de gestolen informatie relevant zijn omdat zij met een actueel telefoonnummer, woonadres en/of e-mailadres hun slachtoffers kunnen vinden. Voor drugscriminelen kan het een manier zijn om gegevens te achterhalen van andere criminelen, zegt Koot. \"Criminelen gebruiken niet altijd uitsluitend prepaid-simkaarten; ze kunnen ook voor privé-, familie- of vriendencontact een regulier betaald abonnement gebruiken. \"Een datalek als dit is waarlijk één van de ergste horrorscenario's.\" Communiceren duurt lang \"We zijn vanmiddag om 12.00 uur begonnen met het inlichten van onze klanten\", zegt Odido-directeur Tisha van Lammeren tegen de NOS. \"Dat gebeurde vanaf het moment dat duidelijk was op klantniveau welke gegevens zijn gestolen per klant.\" Dat kon niet eerder, zegt ze. \"Je wil geen foutieve informatie delen.\" Volgens Van Lammeren duurt het inlichten van klanten lang omdat het om miljoenen klanten gaat. De directeur gaat niet in op de vraag of de beveiliging op orde was. \"De veiligheid van onze klanten is onze hoofdprioriteit. Dat dit gebeurt geeft aan hoe slinks de cybercriminelen zijn.\" Ook kan of wil Van Lammeren geen uitspraken doen over de vraag of duidelijk is wat de criminelen willen met de gegevens, of er bijvoorbeeld losgeld is geëist.",
+    "locations": [
+      "Nederland"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Nederland",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.7071354260410023,
+    "sme_probability": 0.729085593901911,
+    "sector_info": {
+      "sector_code": "62",
+      "sector_name": "Computer programming and consultancy"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "NOS",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "toegang",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Ruwhof",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Ruwhof",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Ruwhof",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Matthijs Koot",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Ruwhof",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Tisha van Lammeren",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "NOS",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Van Lammeren",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      }
+    ],
+    "all_sectors_in_article": [
+      "62"
+    ]
   }
 }
