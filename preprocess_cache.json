@@ -48417,5 +48417,118 @@
     "all_sectors_in_article": [
       "62"
     ]
+  },
+  "2038c9ea5cd42d64bc07ac30f95fc77d": {
+    "feed": "Politie.nl",
+    "title": "69-jarige vrouw overleden na verkeersongeval in Nieuwe Niedorp",
+    "url": "https://www.politie.nl/nieuws/2026/februari/13/04-69-jarige-vrouw-overleden-na-verkeersongeval-in-nieuwe-niedorp.html",
+    "published": "Fri, 13 Feb 2026 11:09:00 GMT",
+    "summary": "Op de Provincialeweg (N242) in Nieuwe Niedorp vond op donderdag 12 februari rond 16.15 uur een ongeval plaats. De bestuurster, een 69-jarige vrouw uit de gemeente Sudwest-Fryslan (Friesland), is hierbij komen te overlijden.",
+    "full_text": "Bij het ongeval botste de bestuurster door onbekende reden frontaal op een tegenligger. De bestuurder van het andere voertuig is ter controle naar het ziekenhuis gebracht. De nabestaanden krijgen een familieagent toegewezen. Getuigenoproep Bent u getuige geweest en heeft u de politie nog niet gesproken? Of beschikt u over relevant beeldmateriaal (foto’s of video’s) van de situatie? Neem dan contact met ons op. Dat kan via onderstaand tipformulier. Vergeet hierbij niet het zaaknummer PL1100-2026033851 te vermelden. Ook kunt u bellen met 0900-8844. Slachtofferhulp Het meemaken van een verkeersongeval is zeer ingrijpend. Daarom kunt u als getuige of omstander bij Slachtofferhulp terecht voor steun. De ondersteuning die Slachtofferhulp biedt is altijd gratis. Bel 0900-0101 of laat op de website van Slachtofferhulp een bericht achter met verzoek tot contact. U kunt ook contact opnemen met de politie via nummer 0900-8844. Hier kunt u ook uw gegevens achterlaten, waarna slachtofferhulp Nederland contact met u zal opnemen.",
+    "scraped_at": "2026-02-14T04:44:25.329668Z",
+    "id": "e6388ade9ea5b479d57d8bf9c4a172f9c3e5cdf3bcef1462e43dfb05268c57dd",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/februari/13/04-69-jarige-vrouw-overleden-na-verkeersongeval-in-nieuwe-niedorp.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Bij het ongeval botste de bestuurster door onbekende reden frontaal op een tegenligger. De bestuurder van het andere voertuig is ter controle naar het ziekenhuis gebracht. De nabestaanden krijgen een familieagent toegewezen. Getuigenoproep Bent u getuige geweest en heeft u de politie nog niet gesproken? Of beschikt u over relevant beeldmateriaal (foto’s of video’s) van de situatie? Neem dan contact met ons op. Dat kan via onderstaand tipformulier. Vergeet hierbij niet het zaaknummer PL1100-2026033851 te vermelden. Ook kunt u bellen met 0900-8844. Slachtofferhulp Het meemaken van een verkeersongeval is zeer ingrijpend. Daarom kunt u als getuige of omstander bij Slachtofferhulp terecht voor steun. De ondersteuning die Slachtofferhulp biedt is altijd gratis. Bel 0900-0101 of laat op de website van Slachtofferhulp een bericht achter met verzoek tot contact. U kunt ook contact opnemen met de politie via nummer 0900-8844. Hier kunt u ook uw gegevens achterlaten, waarna slachtofferhulp Nederland contact met u zal opnemen.",
+    "locations": [
+      "Nederland"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Nederland",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6809353327149118,
+    "sector_info": {
+      "sector_code": "62",
+      "sector_name": "Computer programming and consultancy"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": [
+      "62"
+    ]
+  },
+  "9ff963414c2d669663d661b95bd10067": {
+    "feed": "NOS.nl (Economie)",
+    "title": "Waar moet je op letten nu criminelen Odido-gegevens hebben?",
+    "url": "https://nos.nl/l/2602301",
+    "published": "Fri, 13 Feb 2026 17:40:31 +0100",
+    "summary": "<p>De hack bij telecombedrijf Odido is waarschijnlijk een van de grootste datalekken ooit in Nederland. Hackers hadden toegang tot een bestand met gegevens van 6,2 miljoen accounts. Daar zaten ook bankrekeningnummers bij. Waar moeten Odido-klanten nu rekening mee houden en extra op letten?</p>\n        <p>De Nederlandse Vereniging van Banken (NVB) benadrukt dat de gegevens niet gebruikt kunnen worden om in te loggen in je bankapp of internetbankieren. \"Je bankrekeningen blijven dus veilig\", staat in <a href=\"https://www.nvb.nl/nieuws/datalek-odido/\">een bericht</a> op de NVB-site.</p>\n        <p>Wel waarschuwt de NVB dat criminelen de informatie kunnen gebruiken om je via mail, telefoon of sociale media te benaderen. En dan kunnen ze doen alsof ze van je bank, Odido of een ander bedrijf zijn. \"Ze kunnen de gegevens gebruiken om geloofwaardiger over te komen, omdat ze over veel van je persoonlijke informatie beschikken.\"</p>\n        <p>De banken roepen mensen daarom op om nooit persoonlijke gegevens, wachtwoorden of pincodes te delen en alert te zijn op berichten die onverwacht, dringend of verdacht overkomen.</p>\n        <h2>Incasso?</h2>\n        <p>In het bestand waar de hackers toegang toe hadden stonden ook bankrekeningnummers. Dat roept de vraag op of ze daarmee dan ook via automatische incasso's geld van je rekening kunnen afschrijven. De NVB zegt dat daar het gevaar niet zit. \"Als criminelen dat willen doen, moeten ze eerst een zakelijk account openen en toestemming vragen om automatische incasso's uit te voeren.\"</p>\n        <p>En je kan ook nog eens bij iedere incasso tot acht weken daarna zelf het geld terugboeken. Als het om een onterechte incasso gaat, heb je zelfs dertien maanden de tijd. Je kan dan een Melding Onterechte Incasso doen bij de bank. Het bedrijf dat het geld afschreef moet dan aantonen dat je daarvoor toestemming gaf. Is die er niet, dan stort de bank het geld terug.</p>\n        <p>Kortom, dat is volgens de banken allemaal te omslachtig. \"Criminelen willen zo snel mogelijk aan geld komen. Dat doen ze door je rechtstreeks te bellen, ze gaan voor de makkelijkste weg.\" De banken vinden dan ook niet dat het nodig is om een nieuw rekeningnummer te nemen.</p>\n        <h2>Gebeld en gemaild</h2>\n        <p>Het grootste gevaar is volgens banken, Odido en de Fraudehelpdesk dat je een telefoontje, sms, whatsapp of mail krijgt van iemand die zich als Odido, je bank of een ander bedrijf voordoet. En je vertrouwen wekt met al je persoonlijke gegevens om vervolgens geld van je te ontfutselen. Pas daar dus voor op de komende tijd. Odido geeft het advies om bij belletjes iemands voor- en achternaam te vragen en het algemene telefoonnummer van het bedrijf. Controleer vervolgens op de site van het bedrijf of dat nummer klopt. Bel dan zelf naar het bedrijf en vraag naar de medewerker die je belde.</p>\n        <p>En je kan dus nepmailtjes krijgen, bijvoorbeeld met facturen, betaalverzoeken of een link om ergens in te loggen. En ook hierbij, controleer zorgvuldig de herkomst en juistheid van mailtjes. Check bijvoorbeeld altijd wat er na het '@'-teken van het emailadres staat. En neem via een andere weg contact op met het bedrijf, of de mail wel echt daarvandaan komt. Log nooit ergens in via een link in zo'n nepmailtje. Want het kan dan bijvoorbeeld een crimineel zijn die zich met een nepwebsite voordoet als je bank en zo je inloggegevens probeert te verkrijgen.</p>\n        <h2>Wat is er volgens Odido mogelijk gestolen?</h2>\n        <p>Niet gestolen:</p>",
+    "full_text": "NOS Nieuws • gisteren, 17:40 De hack bij telecombedrijf Odido is waarschijnlijk een van de grootste datalekken ooit in Nederland. Hackers hadden toegang tot een bestand met gegevens van 6,2 miljoen accounts. Daar zaten ook bankrekeningnummers bij. Waar moeten Odido-klanten nu rekening mee houden en extra op letten? De Nederlandse Vereniging van Banken (NVB) benadrukt dat de gegevens niet gebruikt kunnen worden om in te loggen in je bankapp of internetbankieren. \"Je bankrekeningen blijven dus veilig\", staat in een bericht op de NVB-site. Wel waarschuwt de NVB dat criminelen de informatie kunnen gebruiken om je via mail, telefoon of sociale media te benaderen. En dan kunnen ze doen alsof ze van je bank, Odido of een ander bedrijf zijn. \"Ze kunnen de gegevens gebruiken om geloofwaardiger over te komen, omdat ze over veel van je persoonlijke informatie beschikken.\" De banken roepen mensen daarom op om nooit persoonlijke gegevens, wachtwoorden of pincodes te delen en alert te zijn op berichten die onverwacht, dringend of verdacht overkomen. Incasso? In het bestand waar de hackers toegang toe hadden stonden ook bankrekeningnummers. Dat roept de vraag op of ze daarmee dan ook via automatische incasso's geld van je rekening kunnen afschrijven. De NVB zegt dat daar het gevaar niet zit. \"Als criminelen dat willen doen, moeten ze eerst een zakelijk account openen en toestemming vragen om automatische incasso's uit te voeren.\" En je kan ook nog eens bij iedere incasso tot acht weken daarna zelf het geld terugboeken. Als het om een onterechte incasso gaat, heb je zelfs dertien maanden de tijd. Je kan dan een Melding Onterechte Incasso doen bij de bank. Het bedrijf dat het geld afschreef moet dan aantonen dat je daarvoor toestemming gaf. Is die er niet, dan stort de bank het geld terug. Kortom, dat is volgens de banken allemaal te omslachtig. \"Criminelen willen zo snel mogelijk aan geld komen. Dat doen ze door je rechtstreeks te bellen, ze gaan voor de makkelijkste weg.\" De banken vinden dan ook niet dat het nodig is om een nieuw rekeningnummer te nemen. Gebeld en gemaild Het grootste gevaar is volgens banken, Odido en de Fraudehelpdesk dat je een telefoontje, sms, whatsapp of mail krijgt van iemand die zich als Odido, je bank of een ander bedrijf voordoet. En je vertrouwen wekt met al je persoonlijke gegevens om vervolgens geld van je te ontfutselen. Pas daar dus voor op de komende tijd. Odido geeft het advies om bij belletjes iemands voor- en achternaam te vragen en het algemene telefoonnummer van het bedrijf. Controleer vervolgens op de site van het bedrijf of dat nummer klopt. Bel dan zelf naar het bedrijf en vraag naar de medewerker die je belde. En je kan dus nepmailtjes krijgen, bijvoorbeeld met facturen, betaalverzoeken of een link om ergens in te loggen. En ook hierbij, controleer zorgvuldig de herkomst en juistheid van mailtjes. Check bijvoorbeeld altijd wat er na het '@'-teken van het emailadres staat. En neem via een andere weg contact op met het bedrijf, of de mail wel echt daarvandaan komt. Log nooit ergens in via een link in zo'n nepmailtje. Want het kan dan bijvoorbeeld een crimineel zijn die zich met een nepwebsite voordoet als je bank en zo je inloggegevens probeert te verkrijgen. Niet gestolen:",
+    "scraped_at": "2026-02-14T04:43:48.800111Z",
+    "id": "74f300ad8a62989817a6e807c677cbc4ad2280da340259b3bab7a4a384cd86ad",
+    "canonical_url": "https://nos.nl/l/2602301",
+    "published_ts": "2026-02-13T16:40:31Z",
+    "source_type": "rss",
+    "clean_geo": "NOS Nieuws • gisteren, 17:40 De hack bij telecombedrijf Odido is waarschijnlijk een van de grootste datalekken ooit in Nederland. Hackers hadden toegang tot een bestand met gegevens van 6,2 miljoen accounts. Daar zaten ook bankrekeningnummers bij. Waar moeten Odido-klanten nu rekening mee houden en extra op letten? De Nederlandse Vereniging van Banken (NVB) benadrukt dat de gegevens niet gebruikt kunnen worden om in te loggen in je bankapp of internetbankieren. \"Je bankrekeningen blijven dus veilig\", staat in een bericht op de NVB-site. Wel waarschuwt de NVB dat criminelen de informatie kunnen gebruiken om je via mail, telefoon of sociale media te benaderen. En dan kunnen ze doen alsof ze van je bank, Odido of een ander bedrijf zijn. \"Ze kunnen de gegevens gebruiken om geloofwaardiger over te komen, omdat ze over veel van je persoonlijke informatie beschikken.\" De banken roepen mensen daarom op om nooit persoonlijke gegevens, wachtwoorden of pincodes te delen en alert te zijn op berichten die onverwacht, dringend of verdacht overkomen. Incasso? In het bestand waar de hackers toegang toe hadden stonden ook bankrekeningnummers. Dat roept de vraag op of ze daarmee dan ook via automatische incasso's geld van je rekening kunnen afschrijven. De NVB zegt dat daar het gevaar niet zit. \"Als criminelen dat willen doen, moeten ze eerst een zakelijk account openen en toestemming vragen om automatische incasso's uit te voeren.\" En je kan ook nog eens bij iedere incasso tot acht weken daarna zelf het geld terugboeken. Als het om een onterechte incasso gaat, heb je zelfs dertien maanden de tijd. Je kan dan een Melding Onterechte Incasso doen bij de bank. Het bedrijf dat het geld afschreef moet dan aantonen dat je daarvoor toestemming gaf. Is die er niet, dan stort de bank het geld terug. Kortom, dat is volgens de banken allemaal te omslachtig. \"Criminelen willen zo snel mogelijk aan geld komen. Dat doen ze door je rechtstreeks te bellen, ze gaan voor de makkelijkste weg.\" De banken vinden dan ook niet dat het nodig is om een nieuw rekeningnummer te nemen. Gebeld en gemaild Het grootste gevaar is volgens banken, Odido en de Fraudehelpdesk dat je een telefoontje, sms, whatsapp of mail krijgt van iemand die zich als Odido, je bank of een ander bedrijf voordoet. En je vertrouwen wekt met al je persoonlijke gegevens om vervolgens geld van je te ontfutselen. Pas daar dus voor op de komende tijd. Odido geeft het advies om bij belletjes iemands voor- en achternaam te vragen en het algemene telefoonnummer van het bedrijf. Controleer vervolgens op de site van het bedrijf of dat nummer klopt. Bel dan zelf naar het bedrijf en vraag naar de medewerker die je belde. En je kan dus nepmailtjes krijgen, bijvoorbeeld met facturen, betaalverzoeken of een link om ergens in te loggen. En ook hierbij, controleer zorgvuldig de herkomst en juistheid van mailtjes. Check bijvoorbeeld altijd wat er na het '@'-teken van het emailadres staat. En neem via een andere weg contact op met het bedrijf, of de mail wel echt daarvandaan komt. Log nooit ergens in via een link in zo'n nepmailtje. Want het kan dan bijvoorbeeld een crimineel zijn die zich met een nepwebsite voordoet als je bank en zo je inloggegevens probeert te verkrijgen. Niet gestolen:",
+    "locations": [
+      "Nederland"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Nederland",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.7071353920954992,
+    "sector_info": {
+      "sector_code": "62",
+      "sector_name": "Computer programming and consultancy"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "NOS",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Vereniging van Banken",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "NVB",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "NVB",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "NVB",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Kortom",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Log",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      }
+    ],
+    "all_sectors_in_article": [
+      "62"
+    ]
   }
 }
