@@ -48530,5 +48530,45 @@
     "all_sectors_in_article": [
       "62"
     ]
+  },
+  "d8cc2d4959432d5652622518b3e88c27": {
+    "feed": "RTV Noord",
+    "title": "112-nieuws zaterdag 14 februari: Automobilist in de sloot bij Stedum • Automobilist en fietser botsen in Stad",
+    "url": "https://www.rtvnoord.nl/112/1380377/112-nieuws-zaterdag-14-februari-automobilist-in-de-sloot-bij-stedum-automobilist-en-fietser-botsen-in-stad",
+    "published": "Sat, 14 Feb 2026 21:26:44 GMT",
+    "summary": "In dit 112-blog houden we je deze zaterdag op de hoogte van het laatste 112-nieuws. Je vindt hier een overzicht van ongelukken, branden, storingen en misdrijven.",
+    "full_text": "Een automobilist is afgelopen nacht rond één uur van de N996 bij Stedum geraakt en in een sloot beland. Diverse politie-eenheden, ambulances, de brandweer en de traumahelikopter rukten uit. Over de toestand van de inzittenden is niets bekend. Het voertuig is zwaar beschadigd.",
+    "scraped_at": "2026-02-15T04:57:57.494329Z",
+    "id": "6b9e441dd87f29ce1004c67df8a0e776294553bcad14cc19071ef7ed3f7585ec",
+    "canonical_url": "https://www.rtvnoord.nl/112/1380377/112-nieuws-zaterdag-14-februari-automobilist-in-de-sloot-bij-stedum-automobilist-en-fietser-botsen-in-stad",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Een automobilist is afgelopen nacht rond één uur van de N996 bij Stedum geraakt en in een sloot beland. Diverse politie-eenheden, ambulances, de brandweer en de traumahelikopter rukten uit. Over de toestand van de inzittenden is niets bekend. Het voertuig is zwaar beschadigd.",
+    "locations": [
+      "Stedum"
+    ],
+    "country": "DE",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Stedum",
+        "DE"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6030084814007092,
+    "sector_info": {
+      "sector_code": "unknown",
+      "sector_name": "Unclassified"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "N996",
+        "sector_code": "unknown",
+        "sector_name": "Unclassified",
+        "is_victim": true
+      }
+    ],
+    "all_sectors_in_article": []
   }
 }
