@@ -54704,5 +54704,40 @@
     "all_sectors_in_article": [
       "62"
     ]
+  },
+  "287924e25acc5a70c210b8bfc821c1fd": {
+    "feed": "L1 Nieuws",
+    "title": "Gehandicapte tienerdochter overlijdt aan longontsteking: moeder had volgens OM dood kunnen voorkomen",
+    "url": "https://www.l1nieuws.nl/nieuws/3139704/gehandicapte-tienerdochter-overlijdt-aan-longontsteking-moeder-had-volgens-om-dood-kunnen-voorkomen",
+    "published": "Wed, 08 Apr 2026 11:07:10 GMT",
+    "summary": "Helen B. (49) uit Valkenburg zou volgens justitie roekeloos hebben gehandeld, met de dood van haar gehandicapte tienerdochter tot gevolg. \"Het meisje was volledig afhankelijk van haar zorg.\"",
+    "full_text": "De zaak komt bij politie en het OM aan het rollen nadat een verzorgster van het meisje, die bij haar thuis kwam, aan de bel trekt en informatie deelt met instanties. Op 27 maart 2021 wordt vervolgens door de hulpdiensten een 15-jarig meisje aangetroffen in een woning in Eygelshoven, waarna reanimatiepogingen plaatsvinden, maar tevergeefs worden gestaakt.",
+    "scraped_at": "2026-04-10T05:27:53.514922Z",
+    "id": "ec2e53d480d813218337378db18cf4d1b0596df028cce65faf0461eaa7e4e855",
+    "canonical_url": "https://www.l1nieuws.nl/nieuws/3139704/gehandicapte-tienerdochter-overlijdt-aan-longontsteking-moeder-had-volgens-om-dood-kunnen-voorkomen",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "De zaak komt bij politie en het OM aan het rollen nadat een verzorgster van het meisje, die bij haar thuis kwam, aan de bel trekt en informatie deelt met instanties. Op 27 maart 2021 wordt vervolgens door de hulpdiensten een 15-jarig meisje aangetroffen in een woning in Eygelshoven, waarna reanimatiepogingen plaatsvinden, maar tevergeefs worden gestaakt.",
+    "locations": [
+      "Eygelshoven"
+    ],
+    "country": "NL",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Eygelshoven",
+        "NL"
+      ]
+    ],
+    "crime_prob": 0.6030084814007092,
+    "sme_probability": 0.6304617553614768,
+    "sector_info": {
+      "sector_code": "00",
+      "sector_name": "General business"
+    },
+    "companies_with_sectors": [],
+    "all_sectors_in_article": [
+      "00"
+    ]
   }
 }
