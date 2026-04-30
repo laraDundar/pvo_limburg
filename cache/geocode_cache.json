@@ -1354,5 +1354,13 @@
   "gemeente Westland": {
     "lat": 52.0219833,
     "lon": 4.171897
+  },
+  "Duindorp": {
+    "lat": 52.0901182,
+    "lon": 4.2580197
+  },
+  "Noord-Limburg": {
+    "lat": 51.0194193,
+    "lon": 5.8658352
   }
 }
