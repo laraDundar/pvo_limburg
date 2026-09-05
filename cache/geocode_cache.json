@@ -1618,5 +1618,17 @@
   "Euvelgunne": {
     "lat": 53.2080978,
     "lon": 6.6069939
+  },
+  "Pelt": {
+    "lat": 51.2197672,
+    "lon": 5.4299496
+  },
+  "Waterschap Limburg": {
+    "lat": 51.2644155,
+    "lon": 5.8672178
+  },
+  "provincie Utrecht": {
+    "lat": 52.0949153,
+    "lon": 5.1531168
   }
 }
