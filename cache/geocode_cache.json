@@ -1630,5 +1630,17 @@
   "provincie Utrecht": {
     "lat": 52.0949153,
     "lon": 5.1531168
+  },
+  "Noord-Drenthe": {
+    "lat": 52.7269859,
+    "lon": 6.5281132
+  },
+  "Noorderzijlvest": {
+    "lat": 53.2562536,
+    "lon": 6.395489
+  },
+  "provincie Groningen": {
+    "lat": 53.2198961,
+    "lon": 6.5706297
   }
 }
