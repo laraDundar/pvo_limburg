@@ -77319,5 +77319,60 @@
     "all_sectors_in_article": [
       "56.3"
     ]
+  },
+  "d42c29edc9cf2c30dabc01d68466a9d9": {
+    "feed": "Politie.nl",
+    "title": "Politie Limburg houdt verdachte online criminaliteit aan",
+    "url": "https://www.politie.nl/nieuws/2026/september/22/10-politie-limburg-houdt-verdachte-online-criminaliteit-aan.html",
+    "published": "Tue, 22 Sep 2026 11:14:00 GMT",
+    "summary": "Het team Cybercrime van de politie in Limburg heeft vandaag een 21-jarige man uit Groningen aangehouden. Hij wordt ervan verdacht online criminele diensten te hebben aangeboden. Deze diensten kunnen mogelijk gebruikt worden bij het plegen van onder andere bankhelpdeskfraude.\r\n\r\nBij de doorzoeking in een woning waar de verdachte verbleef nam de politie zijn gegevensdragers in beslag voor verder onderzoek.",
+    "full_text": "Onderzoek naar bankhelpdeskfraude Vanuit een breder onderzoek naar het fenomeen bankhelpdeskfraude is het team gestuit op deze vorm van criminele dienstverlening. Dit heeft geleid tot de aanhouding van deze verdachte. De diensten die werden aangeboden waren onder andere, callcenter software en phishingwebsites. Met de callcenter software is bijvoorbeeld het volgende mogelijk: Het massaal versturen van sms-berichten met daarin de mededeling dat er een probleem is met de bankrekening. Telefoonnummer spoofen. Hiermee kan het telefoonnummer van een instantie, bijvoorbeeld een bank, worden gesimuleerd. Kopen en controleren van gestolen gegevens. Het klaarzetten van vooraf ingesproken berichten met kiesnummer. Callcenter software Deze callcenter software wordt aangeboden via zogenaamde “handelsplaatsen” voor online criminaliteit. Het verkopen of voorhanden hebben van dergelijke software die uitsluitend ontwikkeld is voor het plegen van online criminaliteit is strafbaar. Facilitators Het Team Cybercrime van de politie in Limburg investeert steeds vaker in het opsporen van verdachten die online criminaliteit faciliteren. Door deze facilitators op te sporen en aan te houden wordt het criminele proces verstoord. Hiermee wordt op grote schaal het maken van meer slachtoffers voorkomen. Ook krijgt de politie op deze manier goed zicht op alle personen die deze diensten vervolgens illegaal afnemen. Vervolgonderzoeken naar deze afnemers worden dan ook niet uitgesloten.",
+    "scraped_at": "2026-09-23T08:22:41.820924Z",
+    "id": "01403775670d6cf3c1e95c2567c91a2f5e14d51332f745d1edfea7f995b679db",
+    "canonical_url": "https://www.politie.nl/nieuws/2026/september/22/10-politie-limburg-houdt-verdachte-online-criminaliteit-aan.html",
+    "published_ts": null,
+    "source_type": "rss",
+    "clean_geo": "Onderzoek naar bankhelpdeskfraude Vanuit een breder onderzoek naar het fenomeen bankhelpdeskfraude is het team gestuit op deze vorm van criminele dienstverlening. Dit heeft geleid tot de aanhouding van deze verdachte. De diensten die werden aangeboden waren onder andere, callcenter software en phishingwebsites. Met de callcenter software is bijvoorbeeld het volgende mogelijk: Het massaal versturen van sms-berichten met daarin de mededeling dat er een probleem is met de bankrekening. Telefoonnummer spoofen. Hiermee kan het telefoonnummer van een instantie, bijvoorbeeld een bank, worden gesimuleerd. Kopen en controleren van gestolen gegevens. Het klaarzetten van vooraf ingesproken berichten met kiesnummer. Callcenter software Deze callcenter software wordt aangeboden via zogenaamde “handelsplaatsen” voor online criminaliteit. Het verkopen of voorhanden hebben van dergelijke software die uitsluitend ontwikkeld is voor het plegen van online criminaliteit is strafbaar. Facilitators Het Team Cybercrime van de politie in Limburg investeert steeds vaker in het opsporen van verdachten die online criminaliteit faciliteren. Door deze facilitators op te sporen en aan te houden wordt het criminele proces verstoord. Hiermee wordt op grote schaal het maken van meer slachtoffers voorkomen. Ook krijgt de politie op deze manier goed zicht op alle personen die deze diensten vervolgens illegaal afnemen. Vervolgonderzoeken naar deze afnemers worden dan ook niet uitgesloten.",
+    "locations": [
+      "Limburg"
+    ],
+    "country": "DE",
+    "country_score": 1.0,
+    "country_evidence": [
+      [
+        "Limburg",
+        "DE"
+      ]
+    ],
+    "crime_prob": 0.6300548038123391,
+    "sme_probability": 0.6300548038123391,
+    "sector_info": {
+      "sector_code": "not_affected",
+      "sector_name": "Not affected by incident"
+    },
+    "companies_with_sectors": [
+      {
+        "company_name": "Telefoonnummer",
+        "sector_code": "62",
+        "sector_name": "Computer programming and consultancy",
+        "is_victim": true
+      },
+      {
+        "company_name": "Team Cybercrime",
+        "sector_code": "not_affected",
+        "sector_name": "Not affected by incident",
+        "is_victim": false
+      },
+      {
+        "company_name": "Ook",
+        "sector_code": "not_affected",
+        "sector_name": "Not affected by incident",
+        "is_victim": false
+      }
+    ],
+    "all_sectors_in_article": [
+      "62",
+      "not_affected"
+    ]
   }
 }
