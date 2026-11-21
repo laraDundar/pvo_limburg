@@ -1874,5 +1874,9 @@
   "Oost-Souburg": {
     "lat": 51.4645556,
     "lon": 3.6042063
+  },
+  "provincie Noord-Holland": {
+    "lat": 52.3720373,
+    "lon": 4.6304086
   }
 }
