@@ -1878,5 +1878,13 @@
   "provincie Noord-Holland": {
     "lat": 52.3720373,
     "lon": 4.6304086
+  },
+  "Bovenburen": {
+    "lat": 52.9250802,
+    "lon": 5.4655271
+  },
+  "Ter Aar": {
+    "lat": 52.1655725,
+    "lon": 4.709364
   }
 }
